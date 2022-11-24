@@ -136,13 +136,18 @@ main{
     margin-bottom: 30px;
 }
 
+.price-details p{
+    justify-self: start;
+    margin-left: 20px;
+}
+
 .price-title, .price-cost{
     display: block;
     line-height: 1.5;
 }
 
 .price-cost{
-    letter-spacing: 0.9px;
+    letter-spacing: 0.5px;
 }
 
 .price-title{
