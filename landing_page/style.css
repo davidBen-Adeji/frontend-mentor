@@ -106,7 +106,7 @@ i:hover, i:focus{
     }
 }
 
-@media screen and (min-width: 600px) and (max-height:800px) {
+@media screen and (min-width: 600px) and (max-height:1000px) {
     body{
         background-image: url(images/bg-desktop.svg);
         background-size: 100% 100vh;
