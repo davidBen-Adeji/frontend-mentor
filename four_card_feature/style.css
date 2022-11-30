@@ -82,3 +82,12 @@ header p{
 .calculator-card{
     border-top: 5px solid hsl(212, 86%, 64%);
 }
+
+@media screen and (min-width: 1200px) {
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+}
