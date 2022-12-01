@@ -54,6 +54,10 @@ section h1{
     font-weight: 600;
 }
 
+.h1 h1{
+    line-height: .7;
+}
+
 section p{
     line-height: 1.8;
 }
@@ -63,7 +67,7 @@ section a{
     text-decoration: none;
     color: hsl(257, 40%, 49%);
     background-color: white;
-    padding: .5em 6em;
+    padding: .5em 5em;
     border-radius: 20px;
     margin-top: 10px;
 }
@@ -91,4 +95,81 @@ footer i+i{
 footer i:hover, footer i:focus{
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 600px) {
+    .h1 h1{
+        font-size: 2rem;
+    }
+
+    section p{
+       max-width: 600px;
+       margin: 0 auto;
+    }
+
+    section a{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .logo{
+        width: unset;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .container{
+        width: 90%;
+    }
+
+    .logo{
+        width: unset;
+    }
+
+    .main section{
+        text-align: start;
+        max-width: 500px;
+    }
+
+    .h1 h1{
+        line-height: unset;
+        margin: 0;
+        font-size: 2.3rem;
+    }
+
+    .row{
+        display: flex;
+    }
+
+    .col{
+        width: 100%;
+    }
+
+    .col + .col{
+        margin-left: 40px;
+    }
+
+    section a{
+        padding: .5em 4em;
+    }
+
+    footer{
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-height: 850px) {
+    .bg-mobile{
+        display: none;
+    }
+
+    .bg-desktop{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+    }
 }
