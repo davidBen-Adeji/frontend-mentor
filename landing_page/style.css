@@ -1,1 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+.bg-desktop{
+    display: none;
+}
+
+.header{
+    padding: 2.5em 0;
+}
+
+.logo{
+    width: 170px;
+}
+
+.bg-mobile{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.main section{
+    text-align: center;
+    margin-top: 40px;
+}
+
+section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+section p{
+    line-height: 1.8;
+}
+
+section a{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    padding: .5em 6em;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+section a:hover, section a:focus{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer i{
+    padding: 1em;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+footer i+i{
+    margin-left: 15px;
+}
+
+footer i:hover, footer i:focus{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
