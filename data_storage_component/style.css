@@ -1,0 +1,72 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --gradient-1: hsl(6, 100%, 80%);
+    --gradient-2: hsl(335, 100%, 65%);
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+html{
+    box-sizing: border-box;
+ }
+
+ *, *::before, *::after{
+    box-sizing: inherit;
+ }
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: .875rem;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+    position: relative;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.section{
+    background-color: var(--dark-blue);
+    padding: 3em 5em 3em 3em;
+    border-radius: 10px;
+}
+
+.first-section{
+    margin-bottom: 20px;
+    border-top-right-radius: 100px;
+}
+
+.icons {
+    margin-top: 30px;
+    display: flex;
+}
+
+.icons div{
+    background-color: var(--very-dark-blue);
+    padding: .5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons div + div{
+    margin-left: 18px;
+}
+
+.second-section{
+    padding-top: 1em;
+}
