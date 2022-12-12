@@ -1,8 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 :root{
-    --gradient-1: hsl(6, 100%, 80%);
-    --gradient-2: hsl(335, 100%, 65%);
+    --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     --pale-blue: hsl(243, 100%, 93%);
     --grayish-blue: hsl(229, 7%, 55%);
     --dark-blue: hsl(228, 56%, 26%);
@@ -102,7 +101,7 @@ h1{
 .storage-level {
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+    background-image: var(--gradient);
     border-radius: inherit;
     padding: 1px 2px;
 }
@@ -140,6 +139,14 @@ h1{
     font-weight: 700;
 }
 
+@media screen and (min-width: 700px) {
+    body {
+        background-image: url(images/bg-desktop.png);
+        background-size: 100%;
+        background-position: bottom;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .row {
         display: flex;
@@ -175,4 +182,3 @@ h1{
     top: 100%;
   }
 }
-
