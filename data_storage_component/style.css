@@ -23,7 +23,6 @@ body{
     margin: 0;
     min-height: 100vh;
     background-color: var(--very-dark-blue);
-    position: relative;
     background-image: url(images/bg-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +79,6 @@ h1{
     padding: 1em;
     padding-bottom: 4em;
     color: white;
-
     position: relative;
 }
 
@@ -106,7 +104,6 @@ h1{
     height: 100%;
     background-image: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
     border-radius: inherit;
-    position: relative;
     padding: 1px 2px;
 }
 
@@ -127,9 +124,9 @@ h1{
 .storage-amount{
     color: black;
     background-color: white;
-    position: absolute;
     border-radius: 10px;
     padding: 5px 40px;
+    position: absolute;
     left: 20%;
     top: 80%;
 
@@ -141,5 +138,41 @@ h1{
     margin-left: 5px;
     color: var(--grayish-blue);
     font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+    .row {
+        display: flex;
+    }
+
+  .first-section{
+    margin-bottom: unset;
+  }
+
+  .second-section{
+    margin-left: 30px;
+    align-self: end;
+    padding-bottom: 2em;
+  }
+
+  .second-section p{
+    text-align: left;
+  }
+
+  .storage-amount{
+    top: -30%;
+    left: 68%;
+    border-bottom-right-radius: 0;
+
+  }
+
+  .storage-amount::after{
+    content: '';
+    position: absolute;
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+    left: 89%;
+    top: 100%;
+  }
 }
 
