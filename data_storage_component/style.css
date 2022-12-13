@@ -74,7 +74,7 @@ h1{
 
 .second-section {
     width: 100%;
-    max-width: 800px;
+    max-width: 550px;
     padding: 1em;
     padding-bottom: 4em;
     color: white;
@@ -150,6 +150,7 @@ h1{
 @media screen and (min-width: 1200px) {
     .row {
         display: flex;
+        justify-content: center;
     }
 
   .first-section{
@@ -167,8 +168,8 @@ h1{
   }
 
   .storage-amount{
-    top: -30%;
-    left: 68%;
+    top: -35%;
+    left: 64%;
     border-bottom-right-radius: 0;
 
   }
