@@ -256,6 +256,8 @@ header{
     font-family: var(--open-sans);
     font-weight: 600;
     color: var(--very-dark-cyan);
+    background-color: white;
+    border: none;
 }
 
 .footer-2 button{
