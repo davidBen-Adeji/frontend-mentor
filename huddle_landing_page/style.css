@@ -21,10 +21,13 @@ html{
 body{
     margin: 0;
     font-family: var(--open-sans);
+    color: var(--very-dark-cyan);
+    font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--poppins);
+    font-weight: 700;
 }
 
 a{
@@ -61,11 +64,16 @@ header{
 }
 
 .nav a{
-    color: var(--light-pink);
+    color: var(--pink);
     text-decoration: none;
-    border: 1px solid var(--light-pink);
+    border: 1px solid var(--pink);
     padding: 6px 32px;
     border-radius: 100px;
+}
+
+.nav a:hover, .nav a:focus {
+    color: var(--light-pink);
+    border-color: var(--light-pink);
 }
 
 .hero {
@@ -88,7 +96,12 @@ header{
     padding: 15px 35px;
     display: inline-block;
     margin-top: 10px;
-    box-shadow: 0 10px 5px 2px var(--very-pale-blue);
+    box-shadow: 0 10px 5px 5px var(--very-pale-blue);
+}
+
+.hero a:hover, .hero a:focus {
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
 }
 
 .hero-img{
@@ -119,6 +132,180 @@ header{
     margin-top: 80px;
 }
 
+.svg-top-1{
+    background-image: url(images/bg-section-top-mobile-1.svg);
+    width: 100%;
+    height: 112px;
+    background-size: cover;
+}
+
+.s1-div {
+    transform: translateY(-1px);
+    background-color: #F6FBFF;
+    padding: 4em 0;
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.section-1-text{
+    text-align: center;
+    color: var(--very-dark-cyan);
+    margin-top: 100px;
+}
+.section-1-text p{
+    font-weight: 600;
+}
+
+.svg-bottom-1 {
+    background-image: url(images/bg-section-bottom-mobile-1.svg);
+    width: 100%;
+    height: 52px;
+    background-size: cover;
+    transform: translateY(-1px);
+}
+
+.section-2 {
+    margin-top: 80px;
+}
+
+.section-2-text{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.section-3{
+    margin-top: 80px;
+}
+
+.svg-top-2 {
+    background-image: url(images/bg-section-top-mobile-2.svg);
+    width: 100%;
+    height: 103px;
+    background-size: cover;
+}
+
+.s3-div {
+    transform: translateY(-1px);
+    background-color: #F6FBFF;
+    padding: 4em 0;
+}
+
+.svg-bottom-2 {
+    background-image: url(images/bg-section-bottom-mobile-2.svg);
+    width: 100%;
+    height: 101px;
+    background-size: cover;
+    transform: translateY(-1px);
+}
+
+.section-3-text{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.end-note {
+    text-align: center;
+    margin-top: 80px;
+}
+.end-note a {
+    text-decoration: none;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 100px;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 10px 5px 5px var(--very-pale-blue);
+}
+
+.footer {
+    margin-top: 100px;
+    color: white;
+}
+
+.svg-footer {
+    background-image: url(images/bg-footer-top-mobile.svg);
+    width: 100%;
+    height: 53px;
+    background-size: cover;
+}
+
+.footer-bg{
+    background-color: var(--very-dark-cyan);
+    transform: translateY(-1px);
+    padding: 2em 0 1em;
+}
+
+.footer p {
+    font-weight: 400;
+}
+
+.footer-2 h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.footer-2 input{
+    display: block;
+    width: 100%;
+    padding: .8rem 0;
+    font-size: 1rem;
+    font-family: var(--open-sans);
+    font-weight: 600;
+    color: var(--very-dark-cyan);
+}
+
+.footer-2 button{
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    background-color: var(--pink);
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--open-sans);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer button:hover, .footer button:focus {
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
+}
+
 footer img{
     filter: brightness(0) invert(1);
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-1{
+    margin-top: 80px;
+}
+
+.phone img, .phone p, .email img, .email p{
+    display: inline-block;
+}
+
+.phone p, .email p{
+    margin-left: 15px;
+}
+
+.icons {
+    margin-top: 40px;
+}
+
+i {
+    font-size: 1.8rem;
+}
+
+i + i {
+    margin-left: 10px;
 }

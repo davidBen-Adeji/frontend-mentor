@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f7fb14dfa3.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
@@ -41,26 +42,46 @@
       </div>
     </div>
     
-    <div class="section section-1 container">
-      <div>
-        <h2>Grow Together</h2>
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
-      </div>
-      <img src="images/illustration-grow-together.svg">
+    <div class="section section-1">
+      <div class="svg-top-1"></div>
+          <div class="s1-div">
+            <div class="container column-reverse row">
+              <div class="section-1-text">
+                <h2>Grow Together</h2>
+                <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+              </div>
+              <div class="section-1-img">
+                <img src="images/illustration-grow-together.svg">
+              </div>
+            </div>
+          </div>
+      <div class="svg-bottom-1"></div>
     </div>
+
     <div class="section section-2 container">
-      <img src="images/illustration-flowing-conversation.svg">
-      <div>
+      <div class="section-2-img">
+        <img src="images/illustration-flowing-conversation.svg">
+      </div>
+      <div class="section-2-text">
         <h2>Flowing Conversations</h2>
         <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
       </div>
     </div>
-    <div class="section section-3 container">
-      <div>
-        <h2>Your Users</h2>
-        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+
+    <div class="section section-3">
+      <div class="svg-top-2"></div>
+      <div class="s3-div">
+        <div class="container column-reverse row">
+          <div class="section-3-text">
+            <h2>Your Users</h2>
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+          <div class="section-3-img">
+            <img src="images/illustration-your-users.svg">
+          </div>
+        </div>
       </div>
-      <img src="images/illustration-your-users.svg">
+      <div class="svg-bottom-2"></div>
     </div>
     <div class="end-note container">
       <h2>Ready To Build Your Community?</h2>
@@ -69,27 +90,40 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-1">
-        <img src="images/logo.svg">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
-      
-        <p>Phone: +1-543-123-4567</p>
-        <p>example@huddle.com</p>
+    <div class="svg-footer"></div>
+      <div class="footer-bg">
+        <div class="container column-reverse row">
+          <div class="footer-1">
+            <img class="footer-logo" src="images/logo.svg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+          
+            <div class="phone">
+              <img src="images/icon-phone.svg">
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="email">
+              <img src="images/icon-email.svg">
+              <p>example@huddle.com</p>
+            </div>
+            <div class="icons">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+            </div>
+          </div>
+          <div class="footer-2">
+            <h3>NEWSLETTER</h3>
+            <p>
+              To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+              send you spam or pass on your email address
+            </p>
+            <form>
+              <input type="search" name="search" id="search">
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="footer-2">
-        <h3>Newsletter</h3>
-        <p>
-          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-          send you spam or pass on your email address
-        </p>
-        <form>
-          <input type="search" name="search" id="search">
-          <button>Subscribe</button>
-        </form>
-      
-      </div>
-    </div>
   </footer>
 </body>
 </html>
