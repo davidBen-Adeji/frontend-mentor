@@ -106,6 +106,7 @@ header{
 
 .hero-img{
     margin-top: 80px;
+    text-align: center;
 }
 
 .hero-stats{
@@ -164,7 +165,7 @@ header{
     width: 100%;
     height: 52px;
     background-size: cover;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .section-2 {
@@ -198,7 +199,7 @@ header{
     width: 100%;
     height: 101px;
     background-size: cover;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .section-3-text{
@@ -219,6 +220,11 @@ header{
     display: inline-block;
     margin-top: 10px;
     box-shadow: 0 10px 5px 5px var(--very-pale-blue);
+}
+
+.end-note a:hover, .end-note a:focus {
+    background-color: var(--light-pink);
+    border-color: var(--light-pink);
 }
 
 .footer {
@@ -310,4 +316,31 @@ i {
 
 i + i {
     margin-left: 10px;
+}
+
+@media screen and (min-width: 390px) {
+    .svg-top-1{
+        background-image: url(images/bg-section-top-desktop-1.svg);
+        height: 165px;
+    }
+
+    .svg-bottom-1{
+        background-image: url(images/bg-section-bottom-desktop-1.svg);
+        height: 139px;
+    }
+
+    .svg-top-2{
+        background-image: url(images/bg-section-top-desktop-2.svg);
+        height: 156px;
+    }
+
+    .svg-bottom-2{
+        background-image: url(images/bg-section-bottom-desktop-2.svg);
+        height: 139px;
+    }
+
+    .svg-footer{
+        background-image: url(images/bg-footer-top-desktop.svg);
+        height: 158px;
+    }
 }
