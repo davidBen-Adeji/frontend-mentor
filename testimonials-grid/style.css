@@ -86,6 +86,9 @@ p{
 
 .item1 {
     background-color: var(--violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
 }
 .item1 .img {
     border-color: purple;
