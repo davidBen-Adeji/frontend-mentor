@@ -19,8 +19,6 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
-    font-size: 13px;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
@@ -124,7 +122,7 @@ p{
     }
 
     .item {
-        padding: 10px 30px 0;
+        padding: 20px 30px 0;
     }
 
     .item1 {
