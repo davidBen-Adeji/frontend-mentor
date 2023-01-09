@@ -25,11 +25,11 @@ Users should be able to:
 
 #### Mobile Screenshot
 
-![Mobile screenshot](./images/mobile_screenshot.jfif)
+![Mobile screenshot](./images/mobile-screenshot.jfif)
 
 #### Desktop Screenshot
 
-![Desktop screenshot](./images/desktop_screenshot.jfif)
+![Desktop screenshot](./images/desktop-screenshot.jfif)
 
 
 ### Links
