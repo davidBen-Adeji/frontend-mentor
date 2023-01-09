@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/davidBen-Adeji/frontend-mentor/tree/main/testimonials-grid)
+- Live Site URL: [Add live site URL here](https://peaceful-manatee-60978d.netlify.app/)
 
 ## My process
 
@@ -48,4 +48,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@davidBen-Adeji](https://www.frontendmentor.io/profile/davidBen-Adeji)
