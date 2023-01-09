@@ -9,10 +9,46 @@
 
 html {
     box-sizing: border-box;
-    font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
 body{
     min-height: 100vh;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-text {
+    color: var(--grayish-blue);
+}
+
+.main {
+    margin-top: 80px;
+}
+
+.action img {
+    width: 100px;
+    height: 100px;
+}
+
+.action h1 {
+    margin-top: 80px;
+}
+
+.action p {
+    margin-top: 30px;
 }
