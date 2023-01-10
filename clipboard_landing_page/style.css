@@ -183,3 +183,73 @@ p {
     gap: 40px;
     font-size: 1.5rem;
 }
+
+@media screen and (min-width: 50em) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        max-width: none;
+    }
+
+    .ios-link, .mac-link {
+        padding: 20px 80px;
+    }
+
+    .f-row {
+        display: flex;
+        gap: 40px;
+        text-align: start;
+    }
+
+    .f-p {
+        margin-top: 0;
+        display: flex;
+        gap: 30px;
+    }
+
+    .footer-links{
+        margin-left: auto;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 62.5em) {
+    .function {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .func {
+        width: 100%;
+    }
+
+    .func img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .partners {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .f-row {
+        gap: 60px;
+    }
+    .f-p {
+        gap: 60px;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .section-1{
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
