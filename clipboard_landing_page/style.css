@@ -9,13 +9,18 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'Bai Jamjuree', sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body{
+    margin: 0;
     min-height: 100vh;
     background-image: url(images/bg-header-mobile.png);
+    background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 img {
@@ -23,7 +28,7 @@ img {
 }
 
 .container {
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -32,8 +37,18 @@ img {
     text-align: center;
 }
 
+.f-18{
+    font-size: 1.125rem;
+}
+
 .main-text {
     color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+p {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .main {
@@ -51,4 +66,120 @@ img {
 
 .action p {
     margin-top: 30px;
+}
+
+.links {
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ios-link, .mac-link {
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.ios-link:hover, .ios-link:focus {
+    background-color: hsl(171, 66%, 50%);
+}
+
+.mac-link:hover, .mac-link:focus {
+    background-color: hsl(233, 100%, 74%);
+}
+
+.ios-link {
+    background-color: var(--strong-cyan);
+    box-shadow: 0 4px hsl(171, 66%, 35%);
+}
+
+.mac-link {
+    background-color: var(--light-blue);
+    box-shadow: 0 4px hsl(233, 100%, 59%);
+}
+
+.action h2 {
+    margin-top: 130px;
+}
+
+.section-1 {
+    margin-top: 100px;
+}
+
+.features h3 {
+    margin-top: 40px;
+}
+
+.section-2 {
+    margin-top: 170px;
+}
+
+.section-2 img {
+    display: inline-block;
+    margin: 45px 0 60px;
+}
+
+.section-3 {
+    margin-top: 100px;
+}
+
+.function {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.partners {
+    margin-top: 80px;
+    display: grid;
+    justify-items: center;
+    gap: 70px;
+}
+
+.end-note {
+    margin-top: 100px;
+}
+
+.end-note .links{
+    margin-top: 70px;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: hsl(201, 11%, 94%);
+    color: var(--dark-grayish-blue);
+    padding: 50px 0;
+}
+
+.footer .logo {
+    width: 70px;
+    height: 70px;
+}
+
+.f-p {
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer p:hover, .footer p:focus, .footer-links i:hover, .footer-links i:focus {
+    cursor: pointer;
+    color: var(--strong-cyan);
+}
+
+.footer-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.5rem;
 }
