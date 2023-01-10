@@ -250,6 +250,14 @@ p {
         margin-left: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 80px;
+    }
+
+    .features {
+        text-align: left;
+    }
+
+    .features p {
+        margin-left: 0;
     }
 }
