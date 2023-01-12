@@ -7,22 +7,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f7fb14dfa3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <img src="images/logo.svg" alt="Site Logo">
-    <nav>
-      <ul>
-        <li>Features</li>
-        <li>Team</li>
-        <li>Sign In</li>
+  <header class="header container f-row">
+    <img class="logo header__logo" src="images/logo.svg" alt="Site Logo">
+    <nav class="nav header__nav">
+      <ul class="nav__list">
+        <li class="nav__list__item">Features</li>
+        <li class="nav__list__item">Team</li>
+        <li class="nav__list__item">Sign In</li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <div>
+  <section class="section section-1 container f-row f-col__reverse">
+    <div class="section__text section-1__text">
       <h1>
         All your files in one secure location, accessible anywhere.
       </h1>
@@ -34,13 +37,14 @@
         <button>Get Started</button>
       </form>
     </div>
-    <img src="images/illustration-1.svg" alt="illustration of people arranging files">
+    <img class="section__image section-1__image" src="images/illustration-1.svg" alt="illustration of people arranging files">
   </section>
 
-  <section>
-    <div class="svg-curve"></div>
-    <div class="parent">
-      <div>
+  <div class="svg-curve"></div>
+
+  <section class="section section-2">  
+    <div class="container f-row f-col__reverse">
+      <div class="section__text section-2__text">
         <h2>Stay productive, wherever you are</h2>
         <p>
           Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
@@ -49,7 +53,7 @@
           Securely share files and folders with friends, family and colleagues for
           live collaboration. No email attachments required!
         </p>
-        <a href="#">See how Fylo works</a>
+        <a href="#">See how Fylo works <img src="images/icon-arrow.svg" alt="arrow facing right"></a>
         <figure>
           <img src="images/icon-quotes.svg" alt="">
           <blockquote>
@@ -65,26 +69,59 @@
           </figcaption>
         </figure>
       </div>
+      <img class="section__image section-2__image" src="images/illustration-2.svg" alt="people arranging files">
     </div>
   </section>
 
-  Get early access today
+  <section class="section section-3">
+    <div class="container f-row">
+      <div class="section__text section-3__text">
+        <h2>Get early access today</h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      <form action="#">
+        <input type="email" placeholder="emai@example.com">
+        <button>Get Started For Free</button>
+      </form>
+    </div>
+  </section>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
+  <footer class="footer">
+    <div class="container">
+      <img  class="logo footer__logo" src="images/logo.svg" alt="Site Logo">
+      <div class="f-row">
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__list--item"><img src="images/icon-phone.svg" alt="phone icon"> Phone: +1-543-123-4567</li>
+            <li class="footer__nav__list--item"><img src="images/icon-email.svg" alt="email icon"> example@fylo.com</li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__list--item">About Us</li>
+            <li class="footer__nav__list--item">Jobs</li>
+            <li class="footer__nav__list--item">Press</li>
+            <li class="footer__nav__list--item">Blog</li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__list--item">Contact Us</li>
+            <li class="footer__nav__list--item">Terms</li>
+            <li class="footer__nav__list--item">Privacy</li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list" style="list-style: none;">
+            <li class="footer__nav__list--item"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="footer__nav__list--item"><i class="fa-brands fa-twitter"></i></li>
+            <li class="footer__nav__list--item"><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
