@@ -282,4 +282,41 @@ svg {
     color: var(--desaturated-blue);
 }
 
+@media (min-width: 600px) {
+    .svg-curve{
+        height: 114px;
+        background-image: url(images/bg-curve-desktop.svg);
+        transform: translateY(68px);
+    }
+}
+
+@media (min-width: 920px) {
+    .svg-curve {
+        transform: translateY(45px);
+    }
+}
+
+@media (min-width: 1380px) {
+    .svg-curve {
+        transform: translateY(10px);
+    }
+}
+
+@media (min-width: 62.5em) {
+    .section__text, .section-3__form {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-1__image, .section-2__image {
+        align-self: flex-start;
+    }
+    
+}
+
 
