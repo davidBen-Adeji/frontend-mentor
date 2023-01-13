@@ -28,7 +28,7 @@
   </header>
 
   <section class="section section-1 container flex-row flex-col__reverse">
-    <div class="section__text section-1__text text-center text-right">
+    <div class="section__text section-1__text text-center text-left">
       <h1>
         All your files in one secure location, accessible anywhere.
       </h1>
@@ -41,8 +41,10 @@
         <button class="light-grayish-blue">Get Started</button>
       </form>
     </div>
-    <img class="section__image section-1__image text-center text-right" src="images/illustration-1.svg"
-      alt="illustration of people arranging files">
+    <div class="img">
+      <img class="section__image section-1__image text-center" src="images/illustration-1.svg"
+        alt="illustration of people arranging files">
+    </div>
   </section>
 
   <div class="svg-curve"></div>
@@ -50,7 +52,7 @@
   <section class="section section-2">
     <div class="container flex-row flex-col__reverse">
       <div class="section__text section-2__text">
-        <h2 class="text-center text-right">Stay productive, wherever you are</h2>
+        <h2 class="text-center text-left">Stay productive, wherever you are</h2>
         <p>
           Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
           needs.
@@ -79,23 +81,27 @@
           </figcaption>
         </figure>
       </div>
-      <img class="section__image section-2__image" src="images/illustration-2.svg" alt="people arranging files">
+      <div class="img">
+        <img class="section__image section-2__image" src="images/illustration-2.svg" alt="people arranging files">
+      </div>
     </div>
   </section>
 
   <section class="section section-3 light-grayish-blue">
     <div class="container flex-row">
-      <div class="section__text section-3__text text-center text-right">
+      <div class="section__text section-3__text text-center text-left">
         <h2>Get early access today</h2>
         <p>
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
           our support team would be happy to help you.
         </p>
       </div>
-      <form class="section-3__form" action="#">
-        <input type="email" placeholder="email@example.com">
-        <button>Get Started For Free</button>
-      </form>
+      <div class="form">
+        <form class="section-3__form" action="#">
+          <input type="email" placeholder="email@example.com">
+          <button>Get Started For Free</button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -129,17 +135,17 @@
         </nav>
         <nav class="nav footer__nav">
           <ul class="footer__nav__list">
-            <li class="footer__nav__list--item">About Us</li>
-            <li class="footer__nav__list--item">Jobs</li>
-            <li class="footer__nav__list--item">Press</li>
-            <li class="footer__nav__list--item">Blog</li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">About Us</a></li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">Jobs</a></li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">Press</a></li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">Blog</a></li>
           </ul>
         </nav>
         <nav class="nav footer__nav">
           <ul class="footer__nav__list">
-            <li class="footer__nav__list--item">Contact Us</li>
-            <li class="footer__nav__list--item">Terms</li>
-            <li class="footer__nav__list--item">Privacy</li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">Contact Us</a></li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">Terms</a></li>
+            <li class="footer__nav__list--item"><a href="#" class="light-grayish-blue">Privacy</a></li>
           </ul>
         </nav>
         <div class="socials">

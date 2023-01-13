@@ -31,6 +31,8 @@ blockquote, body{
 
 body {
     font-family: var(--open-sans);
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, button, input, .header {
@@ -68,7 +70,7 @@ p {
     display: flex;
 }
 
-.logo {
+.header__logo {
     width: 74px;
 }
 
@@ -105,7 +107,8 @@ p {
 
 .section-1__form input, .section-1__form button {
     display: block;
-    width: 100%;
+    width: 85%;
+    margin:  0 auto;
 }
 
 .section-1__form input {
@@ -262,8 +265,13 @@ svg {
 
 .footer__nav__list--item {
     line-height: 3;
+}
+
+.footer__nav__list--item a {
+    text-decoration: none;
     cursor: pointer;
 }
+
 
 .socials {
     display: flex;
@@ -278,8 +286,20 @@ svg {
     cursor: pointer;
 }
 
-.footer__nav__list--item:hover, .socials i:hover, .footer__nav__list--item:focus, .socials i:focus {
+.footer__nav__list--item a:hover, .socials i:hover, .footer__nav__list--item a:focus, .socials i:focus {
     color: var(--desaturated-blue);
+}
+
+@media (min-width: 420px) {
+    .header__logo {
+        width: 110px;
+    }
+}
+
+@media (min-width: 482px) {
+    .header__logo {
+        width: initial;
+    }
 }
 
 @media (min-width: 600px) {
@@ -303,20 +323,37 @@ svg {
 }
 
 @media (min-width: 62.5em) {
-    .section__text, .section-3__form {
+    .text-left {
+        text-align: left;
+    }
+
+    /* .section__text, .section-3__form {
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
     .flex-row {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
     }
 
-    .section-1__image, .section-2__image {
-        align-self: flex-start;
+    .img, .form {
+        align-self: center;
     }
-    
+
+    .section-3__text, .form {
+        width: 100%;
+    }
+
+    .section-3__form input, .section-3__form button, .section-1__form input, .section-1__form button {
+        width: 100%;
+    }
+
+    .socials {
+        align-self: center;
+    }
 }
 
 
