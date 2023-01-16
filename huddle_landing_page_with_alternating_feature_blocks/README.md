@@ -46,7 +46,6 @@ Users should be able to:
 - Mobile-first workflow
 
 
-
 ## Author
 
 - Frontend Mentor - [@davidBen-Adeji](https://www.frontendmentor.io/profile/davidBen-Adeji)
