@@ -13,36 +13,42 @@
 </head>
 <body>
 
-  <main>
+  <main class="main">
     <section class="hero">
-      <div class="hero__header">
+      <div class="hero__header container">
         <img class="hero__header__logo" src="images/logo.svg" alt="site logo">
         <a class="hero__header__link" href="#">Try It Free</a>
       </div>
-      <div class="hero__content">
-        <div>
+      <div class="container flex-row text-center text-left">
+        <div class="hero__content">
           <h1 class="hero__content__heading">Build The Community Your Fans Will Love</h1>
           <p class="hero__content__text">
             Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
           </p>
-          <a href="" class="link hero__content__link">Get Started For Free</a>
+          <a href="#" class="link hero__content__link">Get Started For Free</a>
         </div>
-        <img class="hero__content__image" src="images/illustration-mockups.svg" alt="mobile and desktop device">
+        <div class="hero__content__image">
+          <img src="images/illustration-mockups.svg" alt="mobile and desktop device">
+        </div>
       </div>
     </section>
 
-    <section class="section section--1">
+    <section class="section section--1 container text-center text-left flex-row flex-col__reverse">
       <div class="section__content">
         <h2 class="section__content__heading">Grow Together</h2>
         <p class="section__content__text">
           Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
         </p>
       </div>
-      <img class="section__image" src="images/illustration-grow-together.svg" alt="coworkers standing side by side">
+      <div class="section__image">
+        <img src="images/illustration-grow-together.svg" alt="coworkers standing side by side">
+      </div>
     </section>
 
-    <section class="section section--2">
-      <img class="section__image" src="images/illustration-flowing-conversation.svg" alt="friends conversing at a table">
+    <section class="section section--2 container text-center text-left flex-row">
+      <div class="section__image">
+        <img src="images/illustration-flowing-conversation.svg" alt="friends conversing at a table">
+      </div>
       <div class="section__content">
         <h2 class="section__content__heading">Flowing Conversations</h2>
         <p class="section__content__text">
@@ -52,7 +58,7 @@
       </div>
     </section>
 
-    <section class="section section--3">
+    <section class="section section--3 container text-center text-left flex-row flex-col__reverse">
       <div class="section__content">
         <h2 class="section__content__heading">Your Users</h2>
         <p class="section__content__text">
@@ -60,25 +66,57 @@
           This means, once signed in to your app, your users can start chatting immediately.
         </p>
       </div>
-      <img src="images/illustration-your-users.svg" alt="coworkers arranging messages">
+      <div class="section__image">
+        <img src="images/illustration-your-users.svg" alt="coworkers arranging messages">
+      </div>
     </section>
   </main>
 
-  <footer>
-    Ready To Build Your Community?
-    Get Started For Free
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua
-    +1-543-123-4567
-    example@huddle.com
-    About Us
-    What We Do
-    FAQ
-    Career
-    Blog
-    Contact Us
-    &copy; Copyright 2018 Huddle. All rights reserved.
+  <footer class="footer">
+    <div class="footer__call__to__action text-center container">
+      <h3>Ready To Build Your Community?</h3>
+      <a href="#" class="link hero__content__link">Get Started For Free</a>
+    </div>
+
+    <div class="container">
+      <img class="footer__logo" src="images/logo.svg" alt="site logo">
+      <div class="flex-row">
+        <div class="footer__contact__details">
+          <img src="images/icon-location.svg" alt="location icon" style="margin-top: 5px;">
+          <p style="margin-top: 0;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <img class="footer__img" src="images/icon-phone.svg" alt="phone icon">
+          <p>+1-543-123-4567</p>
+          <img class="footer__img" src="images/icon-email.svg" alt="email icon">
+          <p>example@huddle.com</p>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__list--item"><a href="" class="footer__nav__list--link">About Us</a></li>
+            <li class="footer__nav__list--item"><a href="" class="footer__nav__list--link">What We Do</a></li>
+            <li class="footer__nav__list--item"><a href="" class="footer__nav__list--link">FAQ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__list--item"><a href="" class="footer__nav__list--link">Career</a></li>
+            <li class="footer__nav__list--item"><a href="" class="footer__nav__list--link">Blog</a></li>
+            <li class="footer__nav__list--item"><a href="" class="footer__nav__list--link">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer__socials text-center">
+          <i class="fa-brands fa-facebook-f footer__socials__icon"></i>
+          <i class="fa-brands fa-twitter footer__socials__icon"></i>
+          <i class="fa-brands fa-instagram footer__socials__icon"></i>
+        </div>
+      </div>
+      <p class="text-center text-right" style="font-size: 14px;">
+        &copy; Copyright 2018 Huddle. All rights reserved.
+      </p>
+    </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/f7fb14dfa3.js" crossorigin="anonymous"></script>
 </body>
 </html>
