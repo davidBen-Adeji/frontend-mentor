@@ -74,6 +74,7 @@ p {
 .rating {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 1.5em;
 }
 
@@ -88,7 +89,7 @@ p {
 
 .rating__button:hover {
     background-color: var(--orange);
-    color: white;
+    color: var(--white);
 }
 
 .submit {
@@ -104,10 +105,6 @@ p {
     padding: .8em 0;
     border-radius: 100px;
     cursor: pointer;
-}
-.submit:hover {
-    background-color: var(--white);
-    color: var(--orange);
 }
 
 .no--rating {
