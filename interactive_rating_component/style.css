@@ -45,7 +45,7 @@ body {
 .main {
     background-color: var(--dark-blue);
     width: 90%;
-    max-width: 450px;
+    max-width: 380px;
     border-radius: 15px;
     padding: 1.5em;
 }
@@ -105,6 +105,11 @@ p {
     padding: .8em 0;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
 
 .no--rating {

@@ -10,42 +10,39 @@ let selectedRating = null;
 // add new styles to selected rating and store the rating value
 ratings.forEach((rating, index, array) => {
     rating.addEventListener('click', () => {
-       array.forEach(array => {
         // reset rating back to default color if it had been selected before
-        if (array.style.backgroundColor == 'var(--light-grey)' && array.style.color == 'var(--white)') {
-            array.style.backgroundColor = '';
-            array.style.color = '';
+        if (selectedRating !== null) {
+            selectedRating.style.backgroundColor = '';
+            selectedRating.style.color = '';
         } 
-       })
-
+       
     //    add new color and background color
        rating.style.backgroundColor = 'var(--light-grey)';
        rating.style.color = 'var(--white)';
     //    store the rating value
-       selectedRating = rating.dataset.value;
+       selectedRating = rating;
     })
 })
 
 submitButton.addEventListener('click', () => {
-    // tell 
-    if (selectedRating == null) {
+    // tell user to select a rating value if none has been selected
+    if (selectedRating === null) {
         noRating.style.display = 'block'
         return;
     }
 
+    // display rating value selected
     ratingState.style.display = 'none';
     thankYouState.style.display = 'block';
-    resultOutput.innerText = selectedRating
+    resultOutput.innerText = selectedRating.dataset.value
 })
 
+// return to select another rating
 returnButton.addEventListener('click', () => {
     thankYouState.style.display = 'none';
     ratingState.style.display = 'block';
     noRating.style.display = 'none';
-    selectedRating = null
-
-    ratings.forEach(rating => {
-        rating.style.backgroundColor = '';
-        rating.style.color = '';
-    })
+    selectedRating.style.backgroundColor = '';
+    selectedRating.style.color = '';
+    selectedRating = null;
 })
