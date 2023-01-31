@@ -46,3 +46,4 @@ returnButton.addEventListener('click', () => {
     selectedRating.style.color = '';
     selectedRating = null;
 })
+
