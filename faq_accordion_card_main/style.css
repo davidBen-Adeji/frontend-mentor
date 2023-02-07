@@ -67,15 +67,29 @@ img, svg {
     background-color: white;
     border-radius: 20px;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 1.8em 2.5em;
    background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 70%; 
+    position: relative;
+    /* z-index: -2 */
 }
 
-.img--container {
+.main::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+
+/* .img--container {
     width: 85%;
     margin: 0 auto;
     transform: translateY(-58%);
@@ -83,6 +97,10 @@ img, svg {
 
 .faq {
     margin-top: -3.5em;
+} */
+
+.faq {
+    margin-top: 13em;
 }
 
 .faq__section {
@@ -123,3 +141,27 @@ img, svg {
 .faq__answer--visible {
     height: 2.8125rem;
 }
+
+/* @media (min-width: 37.5em) {
+    .faq {
+        margin-top: -9em;
+    }
+}
+
+@media (min-width: 43.75em) {
+    .faq {
+        margin-top: -12em;
+    }
+}
+
+@media (min-width: 50em) {
+    .faq {
+        margin-top: -16em;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .faq {
+        margin-top: -20em;
+    }
+} */
