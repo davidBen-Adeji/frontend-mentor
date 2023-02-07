@@ -102,7 +102,7 @@ img, svg {
     content: url(images/icon-arrow-down.svg);
     position: absolute;
     right: 0;
-    transition: transform 500ms ease;
+    transition: transform 250ms ease;
 }
 
 .faq__question--bold {
