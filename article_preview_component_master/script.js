@@ -5,8 +5,10 @@ let socialsSection = document.querySelector('.content__share');
 let toggleIcon = true
 
 display.addEventListener('click', () => {
+    // make social media icons visible
     socialsSection.classList.toggle('content__share--visible');
     
+    // add new styles to share icon. Remove style if toggleIcon variable is false
     if (toggleIcon) {
         display.style.backgroundColor = 'var(--desaturated-dark-blue)';
         shareIcon.style.filter = 'brightness(0) invert(1)';
@@ -20,5 +22,6 @@ display.addEventListener('click', () => {
 })
 
 hide.addEventListener('click', () => {
+    // remove social media icons
     socialsSection.classList.remove('content__share--visible');
 })
