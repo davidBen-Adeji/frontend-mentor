@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main class="main">
+    <div class="image__container">
+      <img src="images/drawers.jpg" alt="flower vase on a drawer">
+    </div>
+    <section class="content">
+      <h1 class="content_header">
+        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+      </h1>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+      <p class="content__text">
+        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
+        and uninviting. I’ve got some simple tips to help you make any room feel complete.
+      </p>
 
-  Michelle Appleton
-  28 Jun 2020
+      <div class="content__footer">
+        <img src="images/avatar-michelle.jpg" alt="image of Michelle Appleton">
+        <p>
+          <span class="content__author">
+            Michelle Appleton
+          </span>
+          <span class="content__date">
+            28 Jun 2020
+          </span>
+        </p>
+        <img src="images/icon-share.svg" alt="share icon">
+      </div>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="content__share">
+        <p>Share</p>
+        <img src="images/icon-facebook.svg" alt="facebook icon">
+        <img src="images/icon-twitter.svg" alt="facebook icon">
+        <img src="images/icon-pinterest.svg" alt="facebook icon">
+        <img src="images/icon-share.svg" alt="facebook icon">
+      </div>
+    </section>
+  </main>
+
+
 </body>
+
 </html>
