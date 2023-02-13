@@ -1,3 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+:root {
+    /* Colors */
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
 img, svg {
     max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: .8125rem;
+}
+
+.main {
+    width: 85%;
+    max-width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 1.3;    
+}
+
+.image__container {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.image__container img{
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.content {
+    padding: 3em 2em 2em;
+    color: var(--Very-dark-grayish-blue);
+    position: relative;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    overflow: hidden;
+}
+
+.michelle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.content__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.content__footer p {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.content__author {
+    font-weight: 700;
+}
+
+.content__footer--icon {
+    margin-left: auto;
+}
+
+.content__share{
+    background-color: var(--Very-dark-grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2em 2em;
+    transform: translateX(101%);
+    transition: transform 250ms ease;
+}
+
+.content__share--visible {
+    transform: translateX(0);
+}
+
+.content__share p {
+    color: var(--desaturated-dark-blue);
+    font-size: 1rem;
+    text-transform: uppercase;letter-spacing: 3px;
+}
+
+.content__share div {
+    display: flex;
+    gap: 20px;
+}
+
+.socials img {
+    cursor: pointer;
+}
+
+.content__footer--icon, .content__share--icon {
+    cursor: pointer;
+}
+
+.content__footer--icon {
+    background-color: var(--light-grayish-blue);
+    padding: 13px;
+    border-radius: 50%;
+}
+.content__footer--icon:hover {
+    background-color: var(--desaturated-dark-blue);
+}
+.content__footer--icon:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.content__share--icon {
+    background-color: var(--desaturated-dark-blue);
+    padding: 13px;
+    border-radius: 50%;
+}
+.content__share--icon:hover {
+    background-color: var(--grayish-blue);
+}
+
+.content__share--icon img {
+    filter: brightness(0) invert(1);
+}
+
+@media (min-width: 48.75em) {
+    .main {
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+    }
+
+    .image__container {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: inherit;
+    }
+
+    .image__container img {
+        height: 100%;
+        object-fit: cover;
+        border-bottom-left-radius: inherit;
+    }
+
+    .content__share {
+        transform: translateX(0);
+        border-radius: 10px;
+        /* width: auto; */
+        width: 0;
+        gap: 20px;
+        /* padding: .5em 1em; */
+        padding: 0;
+        overflow: hidden;
+        left: 49%;
+        bottom: 27%;
+        /* display: none; */
+        transition: padding 250ms ease,
+                    width 250ms ease;
+    }
+    .content__share::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 75%;
+        border-top: 10px solid var(--Very-dark-grayish-blue);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+    .content__share--visible {
+        width: auto;
+        padding: .5em 1em;
+        overflow: visible;
+    }
+
+    .content__share p {
+        font-size: inherit;
+    }
+
+    div.content__share--icon {
+        display: none;
+    }
 }
