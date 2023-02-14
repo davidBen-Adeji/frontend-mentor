@@ -118,14 +118,14 @@ img, svg {
 }
 
 .faq__answer {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 250ms ease;
+    transition: max-height 250ms ease;
     color: var(--very-dark-grayish-blue);
 }
 
 .faq__answer--visible {
-    height: 2.8125rem;
+    max-height: 2.8125rem;
 }
 
 /* 330px */
