@@ -9,16 +9,17 @@ display.addEventListener('click', () => {
     socialsSection.classList.toggle('content__share--visible');
     
     // add new styles to share icon. Remove style if toggleIcon variable is false
-    if (toggleIcon) {
-        display.style.backgroundColor = 'var(--desaturated-dark-blue)';
-        shareIcon.style.filter = 'brightness(0) invert(1)';
-        toggleIcon = false 
-    }
-    else {
-        display.style.backgroundColor = '';
-        shareIcon.style.filter = '';
-        toggleIcon = true
-    }
+        if (toggleIcon) {
+            display.style.backgroundColor = 'var(--desaturated-dark-blue)';
+            shareIcon.style.filter = 'brightness(0) invert(1)';
+            toggleIcon = false 
+        }
+        else {
+            display.style.backgroundColor = '';
+            shareIcon.style.filter = '';
+            toggleIcon = true
+        }
+    
 })
 
 hide.addEventListener('click', () => {
