@@ -39,9 +39,13 @@ body{
     margin: 0 auto;
 }
 
-main {
+.main {
     background-image: var(--gradient-1);
     min-height: 100vh;
+}
+
+.hero {
+    background-image: var(--gradient-1);
 }
 
 .hero__logo {
@@ -55,6 +59,8 @@ main {
 
 .hero__content {
     margin-top: 2em;
+    max-width: 50em;
+    margin-inline: auto;
 }
 
 .hero__heading {
@@ -149,4 +155,35 @@ main {
 .error__message {
     display: inline-block;
     color: var(--soft-red);
+}
+
+@media (min-width: 62.5em) {
+    .text-left {
+        text-align: left;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .hero {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: cover;
+    }
+
+    .hero__content {
+        margin-inline: 0;
+        max-width: 30em;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__bg {
+        background-image: url(images/hero-desktop.jpg);
+        background-size: 100% 100%;
+    }
+
 }
