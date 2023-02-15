@@ -10,25 +10,42 @@
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <main class="main">
     <section class="hero">
-      <img src="images/logo.svg" alt="site logo" class="hero__logo">
+      <div class="hero__logo container">
+        <img src="images/logo.svg" alt="site logo">
+      </div>
 
       <img src="images/hero-mobile.jpg" alt="hero image" class="hero__img">
-      <h1 class="hero__heading">We're coming soon</h1>
-      <p class="hero__text">
-        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
-        with announcements and our launch deals.
-      </p>
-      <form class="hero__form" action="#">
-        <input type="email" name="email" id="email" placeholder="Email Address">
-        <button><img src="images/icon-arrow.svg" alt="submit icon"></button>
-      </form>
+
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__heading text-center text-left">
+            <span class="hero__heading--1">We're</span>
+            <br> 
+            <span class="hero__heading--2">coming <br> soon</span>
+          </h1>
+          <p class="hero__text text-center text-left">
+            Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+            with announcements and our launch deals.
+          </p>
+          <form class="hero__form" action="#" novalidate>
+            <input class="email" type="email" name="email" id="email" placeholder="Email Address">
+            <button class="button"><img src="images/icon-arrow.svg" alt="submit icon"></button>
+          </form>
+          <div class="error">
+            <img class="error__icon" src="images/icon-error.svg" alt="error icon">
+            <p class="error__message">
+              Please provide a valid email
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="hero__bg"></div>
