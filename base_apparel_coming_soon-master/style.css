@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+/* ### Primary */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* ### Gradients */
+    --gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
 body{
-    background-color: hsl(0, 2%, 8%);
-  }
+    margin: 0;
+    padding: 0;
+    /* background-color: hsl(0, 2%, 8%); */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    background-image: var(--gradient-1);
+    min-height: 100vh;
+}
+
+.hero__img {
+    width: 100%;
+    display: block;
+}

@@ -39,7 +39,7 @@ main {
 
 .card {
     width: 85%;
-    max-width: 650px;
+    max-width: 43.75rem;
     background-color: white;
     border-radius: 10px;
     line-height: 1.3;    
@@ -104,18 +104,31 @@ main {
     left: 0;
     width: 100%;
     padding: 1.2em 2em;
+    -o-transform: translateX(101%);
+    -moz-transform: translateX(101%);
+    -ms-transform: translateX(101%);
+    -webkit-transform: translateX(101%);
     transform: translateX(101%);
+    -o-transition: transform 250ms ease;
+    -ms-transition: transform 250ms ease;
+    -moz-transition: transform 250ms ease;
+    -webkit-transition: transform 250ms ease;
     transition: transform 250ms ease;
 }
 
 .content__share--visible {
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
     transform: translateX(0);
 }
 
 .content__share p {
     color: var(--desaturated-dark-blue);
     font-size: 1rem;
-    text-transform: uppercase;letter-spacing: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .content__share div {
@@ -174,6 +187,10 @@ main {
         grid-template-columns: 1.2fr 2fr;
     }
 
+    .content {
+        overflow: visible;
+    }
+
     .image__container {
         border-top-right-radius: 0;
         border-bottom-left-radius: inherit;
@@ -186,28 +203,40 @@ main {
     }
 
     .content__share {
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
         transform: translateX(0);
         border-radius: 10px;
-        width: 0;
+        max-width: 0;
         gap: 20px;
         padding: 0;
         overflow: hidden;
-        left: 49%;
+        left: 62%;
         bottom: 27%;
+        -o-transition: padding 250ms ease,
+                    max-width 250ms ease;
+        -ms-transition: padding 250ms ease,
+                    max-width 250ms ease;
+        -moz-transition: padding 250ms ease,
+                    max-width 250ms ease;
+        -webkit-transition: padding 250ms ease,
+                    max-width 250ms ease;
         transition: padding 250ms ease,
-                    width 250ms ease;
+                    max-width 250ms ease;
     }
     .content__share::after {
         content: '';
         position: absolute;
         top: 100%;
-        left: 75%;
+        left: 50%;
         border-top: 10px solid var(--Very-dark-grayish-blue);
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
     .content__share--visible {
-        width: auto;
+        max-width: 50%;
         padding: .5em 1em;
         overflow: visible;
     }
