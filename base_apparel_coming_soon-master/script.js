@@ -4,9 +4,9 @@ let error = document.querySelector('.error');
 let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 form.addEventListener('submit', (event) => {
-    if (email.value.match(validRegex))
-        return true;
-
+    if (email.value.match(validRegex)) 
+        return true; 
+        
     error.classList.add('error--visible');
     event.preventDefault();
 })
