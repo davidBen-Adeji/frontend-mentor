@@ -194,12 +194,12 @@ main {
     .image__container {
         border-top-right-radius: 0;
         border-bottom-left-radius: inherit;
+        background-image: url(images/drawers.jpg);
+        background-size: cover;
     }
 
     .image__container img {
-        height: 100%;
-        object-fit: cover;
-        border-bottom-left-radius: inherit;
+        display: none;
     }
 
     .content__share {
