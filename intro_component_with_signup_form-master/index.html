@@ -10,6 +10,7 @@
 
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="SCSS/index/style.css">
+  <script src="script.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -36,32 +37,32 @@
     <div class="subscribe">
       <a href="#" class="subscribe__link text-center"><span class="f-600">Try it free 7 days</span> then $20/mo. thereafter</a>
       <form action="index.html" class="subscribe__form" novalidate>
-        <div class="subscribe__form__group">
-          <input type="text" name="firstName" class="text subscribe__form__input f-500" id="firstName" placeholder="First Name">
-          <div class="error">
+        <div class="subscribe__form__group text">
+          <input type="text" name="firstName" class="subscribe__form__input f-500" id="firstName" placeholder="First Name">
+          <div class="error error__first-name">
             <img class="error__img" src="images/icon-error.svg" alt="error icon">
-            <p class="error__first-name">First Name cannot be empty</p>
+            <p>First Name cannot be empty</p>
           </div>
         </div>
-        <div class="subscribe__form__group">
-          <input type="text" name="lastName" class="text subscribe__form__input f-500" id="lastName" placeholder="Last Name">
-          <div class="error">
+        <div class="subscribe__form__group text">
+          <input type="text" name="lastName" class="subscribe__form__input f-500" id="lastName" placeholder="Last Name">
+          <div class="error error__last-name">
             <img class="error__img" src="images/icon-error.svg" alt="error icon">
-            <p class="error__last-name">Last Name cannot be empty</p>
+            <p>Last Name cannot be empty</p>
           </div>
         </div>
         <div class="subscribe__form__group">
           <input type="email" name="email" class="email subscribe__form__input f-500" id="email" placeholder="Email Address">
-          <div class="error">
+          <div class="error error__email">
             <img class="error__img" src="images/icon-error.svg" alt="error icon">
-            <p class="error__email">Looks like this is not an email</p>
+            <p>Looks like this is not an email</p>
           </div>
         </div>
         <div class="subscribe__form__group">
-          <input type="password" name="password" class="text subscribe__form__input f-500" id="password" placeholder="Password">
-          <div class="error">
+          <input type="password" name="password" class="password subscribe__form__input f-500" id="password" placeholder="Password">
+          <div class="error error__password">
             <img class="error__img" src="images/icon-error.svg" alt="error icon">
-            <p class="error__password">Password cannot be empty</p>
+            <p>Password cannot be empty</p>
           </div>
         </div>
         <button class="subscribe__form__submit f-600" id="submit">Claim your free trial</button>
