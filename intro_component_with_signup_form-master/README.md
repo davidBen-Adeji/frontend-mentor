@@ -48,5 +48,3 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@davidBen-Adeji](https://www.frontendmentor.io/profile/davidBen-Adeji)
-
-## Acknowledgments
