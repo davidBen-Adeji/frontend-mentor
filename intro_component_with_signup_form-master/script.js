@@ -7,6 +7,7 @@ let errorPassword = document.querySelector('.error__password')
 let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 form.addEventListener('submit', (event) => {
+    // display error if any text input is empty
     texts.forEach(text => {
         let textInput = text.querySelector('input').value.trim();
         let error = text.querySelector('.error');
@@ -19,6 +20,7 @@ form.addEventListener('submit', (event) => {
         }
     })
 
+    // display error if any email input is empty
     if(!(email.value.match(validRegex))) {
         errorEmail.style.display = 'block';
         event.preventDefault();
@@ -26,6 +28,7 @@ form.addEventListener('submit', (event) => {
         errorEmail.style.display = 'none';
     }
 
+    // display error if any password input is empty
     if (!(password.value)) {
         errorPassword.style.display = 'block';
         event.preventDefault();
