@@ -1,3 +1,5 @@
+@use '../util' as u;
+
 html {
     box-sizing: border-box;
 }
@@ -14,7 +16,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: u.em(16);
     font-family: var(--poppins);
     background-image: url(../../images/bg-intro-mobile.png);
     background-color: var(--red);
+
+    @include u.breakpoint(medium) {
+        background-image: url(../../images/bg-intro-desktop.png);
+    }
 }

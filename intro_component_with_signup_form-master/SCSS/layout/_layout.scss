@@ -1,5 +1,139 @@
+@use '../util' as u;
+
+.text-center {
+    text-align: center;
+}
+
 .main {
     width: 87%;
+    max-width: u.rem(1100);
     margin: 0 auto;
-    text-align: center;
+    // text-align: center;
+}
+
+.subscribe{
+    margin-top: u.em(40);
+
+    &__link {
+        color: white;
+        display: block;
+        background-color: var(--blue);
+        border-radius: 7px;
+        padding: u.em(16) u.em(42);
+        box-shadow: 0 7px 10px -3px var(--dark-blue);
+
+        &:hover, &:focus {
+            background-color: var(--blue-hover);
+        }
+    }
+
+    &__form {
+        margin-top: u.rem(20);
+        background-color: white;
+        padding: u.em(20);
+        padding-bottom: u.em(1);
+        border-radius: 7px;
+        box-shadow: 0 7px 10px -3px var(--dark-blue);
+
+        &__group + &__group, &__submit,
+        &__tos {
+            margin-top: u.em(20);
+        }
+
+        &__input, &__submit {
+            display: block;
+            width: 100%;
+        }
+
+        &__input {
+            outline: 0;
+            border: 1px solid var(--grayish-blue);
+            border-radius: 3px;
+            color: var(--dark-blue);
+            font-family: inherit;
+            padding: u.em(8);
+
+            &::-webkit-input-placeholder {
+                color: inherit;
+            }
+            &::-ms-input-placeholder {
+                color: inherit;
+            }
+            &:-ms-input-placeholder {
+                color: inherit;
+            }
+            &::-moz-placeholder {
+                opacity: 1;
+                color: inherit;
+            }
+            &:-moz-placeholder {
+                opacity: 1;
+                color: inherit;
+            }
+            &::placeholder {
+                color: inherit;
+            }
+        }
+
+        .error {
+            display: none;
+            margin-top: u.em(16);
+
+            &__img {
+                vertical-align: text-bottom;
+            }
+
+            & p {
+                display: inline-block;
+                color: var(--red);
+                margin-bottom: 0;
+                font-size: u.rem(13);
+            }
+        }
+
+        &__submit {
+            color: white;
+            background: var(--green);
+            border: 0;
+            border-radius: 7px;
+            padding: u.em(16);
+
+            &:hover, &:focus {
+                background-color: var(--green-hover);
+            }
+        }
+
+        &__tos {
+            font-size: u.rem(11);
+            color: var(--grayish-blue);
+
+            &--red {
+                color: var(--red);
+            }
+        }
+    }
+}
+
+@include u.breakpoint(medium) {
+    .text-left {
+        text-align: left;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .hero, .subscribe {
+        width: 100%;
+    }
+
+    .hero {
+        align-self: center;
+    }
+
+    .subscribe {
+        margin-top: 0;
+    }
 }

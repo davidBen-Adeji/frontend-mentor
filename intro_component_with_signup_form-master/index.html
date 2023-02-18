@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="SCSS/index/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: .6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: .6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <main class="main">
-    <section class="hero">
+    <section class="hero text-center text-left">
       <h1 class="hero__header">Learn to code by <br> <span>watching others</span></h1>
-      <p class="hero__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+      <p class="hero__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is
+        great, but understanding how developers think is invaluable.</p>
     </section>
 
     <div class="subscribe">
-      <a href="#" class="subscribe__link">Try it free 7 days then $20/mo. thereafter</a>
-      <form action="index.html" class="subscribe__form">
-        <input type="text" name="firstName" class="subscribe__form__input" id="firstName" placeholder="First Name">
-        <input type="text" name="lastName" class="subscribe__form__input" id="lastName" placeholder="First Name">
-        <input type="email" name="email" class="subscribe__form__input" id="email" placeholder="Email Address">
-        <input type="password" name="password" class="subscribe__form__input" id="password" placeholder="Password">
-        <button id="subscribe__form__submit">Claim your free trial</button>
-        <p class="subscribe__form__tos">By clicking the button, you are agreeing to our <span class="subscribe__form__tos--red">Terms and Services</span></p>
+      <a href="#" class="subscribe__link text-center"><span class="f-600">Try it free 7 days</span> then $20/mo. thereafter</a>
+      <form action="index.html" class="subscribe__form" novalidate>
+        <div class="subscribe__form__group">
+          <input type="text" name="firstName" class="text subscribe__form__input f-500" id="firstName" placeholder="First Name">
+          <div class="error">
+            <img class="error__img" src="images/icon-error.svg" alt="error icon">
+            <p class="error__first-name">First Name cannot be empty</p>
+          </div>
+        </div>
+        <div class="subscribe__form__group">
+          <input type="text" name="lastName" class="text subscribe__form__input f-500" id="lastName" placeholder="Last Name">
+          <div class="error">
+            <img class="error__img" src="images/icon-error.svg" alt="error icon">
+            <p class="error__last-name">Last Name cannot be empty</p>
+          </div>
+        </div>
+        <div class="subscribe__form__group">
+          <input type="email" name="email" class="email subscribe__form__input f-500" id="email" placeholder="Email Address">
+          <div class="error">
+            <img class="error__img" src="images/icon-error.svg" alt="error icon">
+            <p class="error__email">Looks like this is not an email</p>
+          </div>
+        </div>
+        <div class="subscribe__form__group">
+          <input type="password" name="password" class="text subscribe__form__input f-500" id="password" placeholder="Password">
+          <div class="error">
+            <img class="error__img" src="images/icon-error.svg" alt="error icon">
+            <p class="error__password">Password cannot be empty</p>
+          </div>
+        </div>
+        <button class="subscribe__form__submit f-600" id="submit">Claim your free trial</button>
+        <p class="subscribe__form__tos text-center">By clicking the button, you are agreeing to our <a href="#" class="subscribe__form__tos--red f-600"> Terms and Services </a></p>
       </form>
     </div>
   </main>
-  
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/profile/davidBen-Adeji" target="_blank">David Ben-Adeji</a>.
     </p>
   </footer>
 </body>
+
 </html>

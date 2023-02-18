@@ -1,5 +1,104 @@
+.text-center {
+  text-align: center;
+}
+
 .main {
   width: 87%;
+  max-width: 68.75rem;
   margin: 0 auto;
-  text-align: center;
+}
+
+.subscribe {
+  margin-top: 2.5em;
+}
+.subscribe__link {
+  color: white;
+  display: block;
+  background-color: var(--blue);
+  border-radius: 7px;
+  padding: 1em 2.625em;
+  box-shadow: 0 7px 10px -3px var(--dark-blue);
+}
+.subscribe__link:hover, .subscribe__link:focus {
+  background-color: var(--blue-hover);
+}
+.subscribe__form {
+  margin-top: 1.25rem;
+  background-color: white;
+  padding: 1.25em;
+  padding-bottom: 0.0625em;
+  border-radius: 7px;
+  box-shadow: 0 7px 10px -3px var(--dark-blue);
+}
+.subscribe__form__group + .subscribe__form__group, .subscribe__form__submit, .subscribe__form__tos {
+  margin-top: 1.25em;
+}
+.subscribe__form__input, .subscribe__form__submit {
+  display: block;
+  width: 100%;
+}
+.subscribe__form__input {
+  outline: 0;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 3px;
+  color: var(--dark-blue);
+  font-family: inherit;
+  padding: 0.5em;
+}
+.subscribe__form__input::-moz-placeholder {
+  opacity: 1;
+  color: inherit;
+}
+.subscribe__form__input::placeholder {
+  color: inherit;
+}
+.subscribe__form .error {
+  display: none;
+  margin-top: 1em;
+}
+.subscribe__form .error__img {
+  vertical-align: text-bottom;
+}
+.subscribe__form .error p {
+  display: inline-block;
+  color: var(--red);
+  margin-bottom: 0;
+  font-size: 0.8125rem;
+}
+.subscribe__form__submit {
+  color: white;
+  background: var(--green);
+  border: 0;
+  border-radius: 7px;
+  padding: 1em;
+}
+.subscribe__form__submit:hover, .subscribe__form__submit:focus {
+  background-color: var(--green-hover);
+}
+.subscribe__form__tos {
+  font-size: 0.6875rem;
+  color: var(--grayish-blue);
+}
+.subscribe__form__tos--red {
+  color: var(--red);
+}
+
+@media (min-width: 43.75em) {
+  .text-left {
+    text-align: left;
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .hero, .subscribe {
+    width: 100%;
+  }
+  .hero {
+    align-self: center;
+  }
+  .subscribe {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
