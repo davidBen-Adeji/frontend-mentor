@@ -26,14 +26,13 @@ ratings.forEach(rating => {
 submitButton.addEventListener('click', () => {
     // tell user to select a rating value if none has been selected
     if (selectedRating === null) {
-        // noRating.style.display = 'block'
         noRating.classList.remove('d-none');
-        return;
+        return
     }
 
     // display rating value selected
     ratingState.classList.add('d-none');
-    thankYouState.classList.remove('d-none');
+    thankYouState.classList.remove('d-none')
     resultOutput.innerText = selectedRating.dataset.value
 })
 
