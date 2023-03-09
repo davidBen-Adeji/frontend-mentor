@@ -1,0 +1,16 @@
+img, svg {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 43.75em) {
+  .text-left {
+    text-align: left;
+  }
+}
+.d-none {
+  display: none;
+}/*# sourceMappingURL=display.css.map */

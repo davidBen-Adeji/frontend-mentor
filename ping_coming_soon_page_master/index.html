@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link rel="stylesheet" href="SASS/index/style.css">
+  <script src="script.js" type="module" defer></script>
+  <script src="https://kit.fontawesome.com/f7fb14dfa3.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main class="main">
+    <div class="logo">
+      <img src="images/logo.svg" alt="site logo">
+    </div>
+    <section class="intro">
+      <h1 class="intro__header"><span class="intro__header--gray">We are launching </span>soon!</h1>
+      <p class="intro__text">Subscribe and get notified</p>
+      <form data-form action="index.html" class="intro__form">
+        <div data-formGroup class="intro__form__group">
+          <input data-email class="intro__form__group--input" aria-label="email address" type="email" placeholder="Your email adress">
+          <p data-error class="intro__form__group--error">Please enter a valid email address</p>
+        </div>
+        <button data-button class="intro__form__button">Notify Me</button>
+      </form>
+    </section>
+    <div class="dashboard">
+      <img class="dashboard__img" src="images/illustration-dashboard.png" alt="dashboard">
+    </div>
+    <div class="base">
+      <div class="base__icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p class="base__copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </main>
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/davidBen-Adeji" target="_blank">David Ben-Adeji</a>.
     </p>
   </footer>
 </body>
+
 </html>
