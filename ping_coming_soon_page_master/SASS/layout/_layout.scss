@@ -1,7 +1,7 @@
 @use '../util' as u;
 
 .main{
-    width: min(calc(100% - 50px), u.rem(900));
+    width: min(calc(100% - 50px), u.rem(780));
     margin-inline: auto;
     padding-top: 50px;
 

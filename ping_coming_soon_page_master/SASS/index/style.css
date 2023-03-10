@@ -92,7 +92,7 @@ img, svg {
 }
 
 .main {
-  width: min(100% - 50px, 56.25rem);
+  width: min(100% - 50px, 48.75rem);
   margin-inline: auto;
   padding-top: 50px;
 }
