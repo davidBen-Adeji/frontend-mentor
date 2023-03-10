@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: var(--libre-franklin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875em;
+  font-size: 1.25rem;
+}
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+:root {
+  --libre-franklin: "Libre Franklin", sans-serif;
+}
+
+.f-300 {
+  font-weight: 300;
+}
+
+.f-400 {
+  font-weight: 400;
+}
+
+.f-500 {
+  font-weight: 500;
+}
+
+.f-600 {
+  font-weight: 600;
+}
+
+.f-700 {
+  font-weight: 700;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+}
+
+h1, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 3.125rem);
+  line-height: 1;
+}
+
+input, button {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 43.75em) {
+  .text-left {
+    text-align: left;
+  }
+}
+.d-none {
+  display: none;
+}/*# sourceMappingURL=index.css.map */

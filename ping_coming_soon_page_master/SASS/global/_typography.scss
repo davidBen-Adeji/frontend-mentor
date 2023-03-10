@@ -1,0 +1,22 @@
+@use '../util' as u;
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+h1, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(u.rem(28), 3vw + u.rem(16), u.rem(50));
+    line-height: 1;
+}
+
+input, button {
+    font-size: u.rem(16);
+}
+
+button {
+    cursor: pointer;
+}

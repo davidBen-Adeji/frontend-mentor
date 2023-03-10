@@ -1,0 +1,19 @@
+@use '../util' as u;
+
+img, svg {
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@include u.breakpoint(medium) {
+    .text-left {
+        text-align: left;
+    }
+}
+
+.d-none {
+    display: none;
+}
