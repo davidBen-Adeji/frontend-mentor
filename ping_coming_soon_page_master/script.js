@@ -1,5 +1,3 @@
-// The `input` field is empty. The message for this error should say *"Whoops! It looks like you forgot to add your email"*
-
 let submitForm = document.querySelector('[data-form]');
 let email = document.querySelector('[data-email]');
 let error = document.querySelector('[data-error]');
