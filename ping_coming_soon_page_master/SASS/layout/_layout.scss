@@ -1,1 +1,141 @@
 @use '../util' as u;
+
+.main{
+    width: min(calc(100% - 50px), u.rem(900));
+    margin-inline: auto;
+    padding-top: 50px;
+
+    .intro {
+        margin-top: u.em(40);
+        &__header {
+            margin-bottom: 0;
+            &--gray {
+                color: var(--gray);
+            }
+        }
+
+        &__text {
+            font-size: u.em(14);
+            margin-top: u.em(15);
+        }
+
+        &__form {
+            margin-top: u.em(30);
+           
+            &__input, &__button {
+                display: block;
+                width: 100%;
+                border-radius: 100px;
+                padding: u.em(14) u.em(30);
+                border: 1px solid;
+                outline: 0;
+            }
+
+            &__input {
+                color: var(--very-dark-blue);
+                border-color: var(--pale-blue);
+                &::-webkit-input-placeholder {
+                    opacity: .3;
+                    color: inherit;
+                }
+                &::-ms-input-placeholder {
+                    opacity: .3;
+                    color: inherit;
+                }
+                &:-ms-input-placeholder {
+                    opacity: .3;
+                    color: inherit;
+                }
+                &::-moz-placeholder {
+                    opacity: .3;
+                    color: inherit;
+                }
+                &:-moz-placeholder {
+                    opacity: .3;
+                    color: inherit;
+                }
+                &::placeholder {
+                    opacity: .3;
+                    color: inherit;
+                }
+                &:focus {
+                    border-color: var(--blue);
+                }
+
+                &--error {
+                    border-color: var(--light-red);
+                    &:focus {
+                        border-color: var(--light-red);
+                    }
+                }
+            }
+
+            
+
+
+            &__error {
+                color: var(--light-red);
+                font-size: u.em(12);
+                margin-top: u.em(10);
+                font-style: italic;
+            }
+
+            &__button {
+                margin-top: u.em(14);
+                background-color: var(--blue);
+                color: white;
+                cursor: pointer;
+                box-shadow: 0 5px 20px -2px var(--pale-blue);
+
+                &:hover, &:active {
+                    background-color: var(--light-blue);
+                }
+            }
+
+            @include u.breakpoint(medium) {
+                display: grid;
+                grid-template-columns: 6fr 4fr;
+                gap: 40px;
+
+                &__button {
+                    margin-top: 0;
+                    align-self: flex-start;
+                }
+
+                &__error {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+    .dashboard {
+        margin-top: u.em(45);
+    }
+
+    .base {
+        margin-top: u.em(70);
+        &__icons {
+            display: flex;
+            justify-content: center;
+            gap: u.em(15);
+            color: var(--blue);
+            
+            i {
+                border: 1px solid currentColor;
+                border-radius: 100%;
+                padding: u.em(10);
+                cursor: pointer;
+                &:focus, &:hover {
+                    background-color: var(--blue);
+                    color: white;
+                }
+            }
+        }
+        &__copyright {
+            color: var(--gray);
+            font-size: u.em(12);
+            margin-top: u.em(20);
+        }
+    }
+}

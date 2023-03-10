@@ -22,6 +22,7 @@ body {
 
 :root {
   --blue: hsl(223, 87%, 63%);
+  --light-blue: hsl(223, 87%, 69%);
   --pale-blue: hsl(223, 100%, 88%);
   --light-red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
@@ -88,4 +89,112 @@ img, svg {
 }
 .d-none {
   display: none;
+}
+
+.main {
+  width: min(100% - 50px, 56.25rem);
+  margin-inline: auto;
+  padding-top: 50px;
+}
+.main .intro {
+  margin-top: 2.5em;
+}
+.main .intro__header {
+  margin-bottom: 0;
+}
+.main .intro__header--gray {
+  color: var(--gray);
+}
+.main .intro__text {
+  font-size: 0.875em;
+  margin-top: 0.9375em;
+}
+.main .intro__form {
+  margin-top: 1.875em;
+}
+.main .intro__form__input, .main .intro__form__button {
+  display: block;
+  width: 100%;
+  border-radius: 100px;
+  padding: 0.875em 1.875em;
+  border: 1px solid;
+  outline: 0;
+}
+.main .intro__form__input {
+  color: var(--very-dark-blue);
+  border-color: var(--pale-blue);
+}
+.main .intro__form__input::-moz-placeholder {
+  opacity: 0.3;
+  color: inherit;
+}
+.main .intro__form__input::placeholder {
+  opacity: 0.3;
+  color: inherit;
+}
+.main .intro__form__input:focus {
+  border-color: var(--blue);
+}
+.main .intro__form__input--error {
+  border-color: var(--light-red);
+}
+.main .intro__form__input--error:focus {
+  border-color: var(--light-red);
+}
+.main .intro__form__error {
+  color: var(--light-red);
+  font-size: 0.75em;
+  margin-top: 0.625em;
+  font-style: italic;
+}
+.main .intro__form__button {
+  margin-top: 0.875em;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 20px -2px var(--pale-blue);
+}
+.main .intro__form__button:hover, .main .intro__form__button:active {
+  background-color: var(--light-blue);
+}
+@media (min-width: 43.75em) {
+  .main .intro__form {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 40px;
+  }
+  .main .intro__form__button {
+    margin-top: 0;
+    align-self: flex-start;
+  }
+  .main .intro__form__error {
+    margin-left: 30px;
+  }
+}
+.main .dashboard {
+  margin-top: 2.8125em;
+}
+.main .base {
+  margin-top: 4.375em;
+}
+.main .base__icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.9375em;
+  color: var(--blue);
+}
+.main .base__icons i {
+  border: 1px solid currentColor;
+  border-radius: 100%;
+  padding: 0.625em;
+  cursor: pointer;
+}
+.main .base__icons i:focus, .main .base__icons i:hover {
+  background-color: var(--blue);
+  color: white;
+}
+.main .base__copyright {
+  color: var(--gray);
+  font-size: 0.75em;
+  margin-top: 1.25em;
 }/*# sourceMappingURL=style.css.map */

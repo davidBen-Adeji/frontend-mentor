@@ -28,30 +28,30 @@
 
 <body>
   <main class="main">
-    <div class="logo">
-      <img src="images/logo.svg" alt="site logo">
+    <div class="logo text-center">
+      <img class="logo__img" src="images/logo.svg" alt="site logo">
     </div>
     <section class="intro">
-      <h1 class="intro__header"><span class="intro__header--gray">We are launching </span>soon!</h1>
-      <p class="intro__text">Subscribe and get notified</p>
-      <form data-form action="index.html" class="intro__form">
+      <h1 class="intro__header text-center"><span class="intro__header--gray f-300">We are launching </span>soon!</h1>
+      <p class="intro__text text-center f-500">Subscribe and get notified</p>
+      <form data-form action="index.html" class="intro__form" novalidate>
         <div data-formGroup class="intro__form__group">
-          <input data-email class="intro__form__group--input" aria-label="email address" type="email" placeholder="Your email adress">
-          <p data-error class="intro__form__group--error">Please enter a valid email address</p>
+          <input data-email class="intro__form__input" aria-label="email address"  aria-describedby="validation-error" type="email" placeholder="Your email adress...">
+          <p id="validation-error" data-error aria-live="polite" class="intro__form__error text-center text-left d-none"></p>
         </div>
-        <button data-button class="intro__form__button">Notify Me</button>
+        <button data-button class="intro__form__button f-500" type="button">Notify Me</button>
       </form>
     </section>
     <div class="dashboard">
       <img class="dashboard__img" src="images/illustration-dashboard.png" alt="dashboard">
     </div>
-    <div class="base">
+    <div class="base text-center">
       <div class="base__icons">
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
       </div>
-      <p class="base__copyright">&copy; Copyright Ping. All rights reserved.</p>
+      <p class="base__copyright f-300">&copy; Copyright Ping. All rights reserved.</p>
     </div>
   </main>
 
