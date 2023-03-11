@@ -58,7 +58,6 @@
   margin-top: 0.875em;
   background-color: var(--blue);
   color: white;
-  cursor: pointer;
   box-shadow: 0 5px 20px -2px var(--pale-blue);
 }
 .main .intro__form__button:hover, .main .intro__form__button:active {
