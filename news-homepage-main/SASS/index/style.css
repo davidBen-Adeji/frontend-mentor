@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -10,43 +11,60 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-family: var(--inter);
+  font-size: 0.9375rem;
+  background-color: var(--off-white);
 }
 
 :root {
-  --poppins: "Poppins", sans-serif;
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
 }
 
-.f-300 {
-  font-weight: 300;
+:root {
+  --inter: "Inter", sans-serif;
 }
 
 .f-400 {
   font-weight: 400;
 }
 
-.f-500 {
-  font-weight: 500;
-}
-
-.f-600 {
-  font-weight: 600;
-}
-
 .f-700 {
   font-weight: 700;
 }
 
+.f-800 {
+  font-weight: 800;
+}
+
 a, a:hover, a:visited {
+  cursor: pointer;
   text-decoration: none;
 }
 
-h1, p {
+h1, h2, h3, p {
   margin-top: 0;
+  line-height: 1;
 }
 
 h1 {
-  font-size: clamp(1.75rem, 3vw + 1rem, 3.125rem);
-  line-height: 1;
+  font-size: clamp(2.5rem, 5vw + 1rem, 3.75rem);
+}
+
+h2 {
+  font-size: 2.1875rem;
+}
+
+h3 {
+  font-size: 2.125rem;
+}
+
+p {
+  line-height: 1.5;
 }
 
 input, button, textarea, select {
@@ -73,4 +91,142 @@ img, svg {
 }
 .d-none {
   display: none;
+}
+
+.container {
+  width: min(100% - 40px, 75rem);
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5625rem 0;
+}
+.header .logo {
+  cursor: pointer;
+}
+.header .menu img {
+  cursor: pointer;
+}
+
+.mobile {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: 103%;
+}
+.mobile__nav {
+  width: 70%;
+  height: 100%;
+  background-color: var(--off-white);
+  margin-left: auto;
+  padding: 1.875em 1.25em;
+}
+.mobile__nav__menu__close {
+  text-align: right;
+  margin-bottom: 3.125em;
+}
+.mobile__nav__menu__close img {
+  display: inline;
+  cursor: pointer;
+}
+.mobile__nav__list {
+  display: inline;
+  list-style: none;
+}
+.mobile__nav__list--item {
+  font-size: 1.5625em;
+}
+.mobile__nav__list--item:hover, .mobile__nav__list--item:focus {
+  color: var(--soft-red);
+}
+.mobile__nav__list li + li {
+  margin-top: 1.5em;
+}
+
+.reveal {
+  translate: 0;
+}
+
+.hero__content {
+  margin-top: 1.5625em;
+}
+.hero__content__header {
+  color: var(--very-dark-blue);
+  margin-bottom: 0;
+}
+.hero__content__intro--text {
+  margin-top: 0.9375em;
+  margin-bottom: 2.5em;
+  color: var(--dark-grayish-blue);
+}
+.hero__content__intro--link {
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 0.9375rem 2.5rem;
+}
+.hero__content__intro--link:hover, .hero__content__intro--link:focus {
+  background-color: var(--very-dark-blue);
+}
+.hero .aside {
+  background-color: var(--very-dark-blue);
+  margin-top: 4.0625em;
+  padding: 1.875rem 1.25rem 0;
+}
+.hero .aside__header {
+  color: var(--soft-orange);
+}
+.hero .aside__article {
+  padding-bottom: 1.25rem;
+}
+.hero .aside__article__topic {
+  color: var(--off-white);
+  font-size: 1.25rem;
+}
+.hero .aside__article__topic:hover, .hero .aside__article__topic:focus {
+  color: var(--soft-orange);
+}
+.hero .aside__article__text {
+  color: var(--grayish-blue);
+  margin-top: 0.75em;
+}
+.hero .aside article + article {
+  border-top: 1px solid var(--grayish-blue);
+  padding-top: 1.5625rem;
+}
+
+.articles {
+  margin-top: 4.375em;
+}
+.articles .article {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 30px;
+}
+.articles .article__intro__num {
+  color: var(--grayish-blue);
+  margin-bottom: 0;
+}
+.articles .article__intro__topic {
+  font-size: 1.125rem;
+  display: block;
+  margin-top: 0.625em;
+  color: var(--very-dark-blue);
+}
+.articles .article__intro__topic:hover, .articles .article__intro__topic:focus {
+  color: var(--soft-red);
+}
+.articles .article__intro__text {
+  color: var(--dark-grayish-blue);
+  margin-top: 0.625em;
+}
+.articles .article + .article {
+  margin-top: 1.25em;
 }/*# sourceMappingURL=style.css.map */
