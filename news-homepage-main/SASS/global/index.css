@@ -14,6 +14,7 @@ body {
   font-family: var(--inter);
   font-size: 0.9375rem;
   background-color: var(--off-white);
+  position: relative;
 }
 
 :root {
