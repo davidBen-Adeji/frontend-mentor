@@ -30,7 +30,7 @@ Users should be able to:
 
 #### Desktop Screenshot
 
-![desktop screenshot](./assets/images/mobile-screenshot.jpg)
+![desktop screenshot](./assets/images/deaktop-screenshot.jpg)
 
 
 ### Links
