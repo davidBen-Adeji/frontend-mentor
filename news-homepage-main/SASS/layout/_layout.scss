@@ -102,6 +102,7 @@
         }
 
         &__intro {
+            align-self: center;
             &--text {
                 margin-top: u.em(15);
                 margin-bottom: u.em(40);
@@ -132,6 +133,10 @@
 
         &__article {
             padding-bottom: u.rem(20);
+
+            h3 {
+                margin: 0;
+            }
             &__topic {
                 color: var(--off-white);
                 font-size: u.rem(20);
@@ -184,10 +189,20 @@
        grid-template-columns: 3fr 7fr;
        gap: 30px;
 
+       &__img {
+        align-self: center;
+       }
+
        &__intro {
+        align-self: center;
         &__num {
             color: var(--grayish-blue);
             margin-bottom: 0;
+        }
+
+        h4 {
+            margin: 0;
+            width: fit-content;
         }
         &__topic {
             font-size: u.rem(18);

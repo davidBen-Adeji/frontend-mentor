@@ -184,6 +184,9 @@ img, svg {
   color: var(--very-dark-blue);
   margin-bottom: 0;
 }
+.hero__content__intro {
+  align-self: center;
+}
 .hero__content__intro--text {
   margin-top: 0.9375em;
   margin-bottom: 2.5em;
@@ -209,6 +212,9 @@ img, svg {
 }
 .hero .aside__article {
   padding-bottom: 1.25rem;
+}
+.hero .aside__article h3 {
+  margin: 0;
 }
 .hero .aside__article__topic {
   color: var(--off-white);
@@ -255,9 +261,20 @@ img, svg {
   grid-template-columns: 3fr 7fr;
   gap: 30px;
 }
+.articles .article__img {
+  align-self: center;
+}
+.articles .article__intro {
+  align-self: center;
+}
 .articles .article__intro__num {
   color: var(--grayish-blue);
   margin-bottom: 0;
+}
+.articles .article__intro h4 {
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .articles .article__intro__topic {
   font-size: 1.125rem;
