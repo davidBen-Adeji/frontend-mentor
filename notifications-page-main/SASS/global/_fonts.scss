@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
 :root {
-    --poppins: 'Poppins', sans-serif;
+    --jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 
 .f-300 {
@@ -21,4 +21,8 @@
 
 .f-700 {
     font-weight: 700;
+}
+
+.f-800 {
+    font-weight: 800;
 }
