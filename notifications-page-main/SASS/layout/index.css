@@ -53,10 +53,6 @@
   margin-left: auto;
   display: block;
 }
-.notification__body__item__picture img {
-  width: 100%;
-  height: 100%;
-}
 .notification__body__item__group .alert {
   margin: 0;
 }
