@@ -89,6 +89,10 @@
                     border: 1px solid var(--light-grayish-blue-2);
                     border-radius: 10px;
                     padding: u.em(20) u.em(15);
+
+                    &:hover, &:focus {
+                        background-color: var(--very-light-grayish-blue);
+                    }
                 }
             }
 

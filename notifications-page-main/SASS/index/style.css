@@ -177,6 +177,9 @@ img, svg {
   border-radius: 10px;
   padding: 1.25em 0.9375em;
 }
+.notification__body__item__group .dm:hover, .notification__body__item__group .dm:focus {
+  background-color: var(--very-light-grayish-blue);
+}
 .notification__body__item.read {
   background: none;
 }
