@@ -138,7 +138,7 @@
 @media (min-width: 43.75em) {
   .hero {
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 8fr 4fr;
     gap: 1.25em;
   }
   .hero__img--desktop {
@@ -150,7 +150,7 @@
   .hero__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.125em;
+    gap: 1.25em;
   }
   .hero .aside {
     margin-top: 0;
@@ -204,7 +204,7 @@
 @media (min-width: 43.75em) {
   .articles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2.5em;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 1.25em;
   }
 }/*# sourceMappingURL=index.css.map */

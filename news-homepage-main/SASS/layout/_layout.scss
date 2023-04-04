@@ -159,7 +159,7 @@
 
     @include u.breakpoint(medium) {
         display: grid;
-        grid-template-columns: 7fr 3fr;
+        grid-template-columns: 8fr 4fr;
         gap: u.em(20);
 
         &__img--desktop {
@@ -173,7 +173,7 @@
         &__content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: u.em(50);
+            gap: u.em(20);
         }
 
         .aside {
@@ -230,7 +230,8 @@
 
     @include u.breakpoint(medium) {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: u.em(40);
+        // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(3, 4fr);
+        gap: u.em(20);
     }
 }
