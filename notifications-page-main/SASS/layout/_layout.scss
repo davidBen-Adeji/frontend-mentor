@@ -78,6 +78,10 @@
                         background-color: var(--red);
                         border-radius: 50%;
                     }
+
+                    &__group {
+                        color: var(--blue);
+                    }
                 }
 
                 .time {

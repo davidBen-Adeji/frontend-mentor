@@ -168,6 +168,9 @@ img, svg {
   background-color: var(--red);
   border-radius: 50%;
 }
+.notification__body__item__group .alert__group {
+  color: var(--blue);
+}
 .notification__body__item__group .time {
   line-height: 1.5;
   color: var(--grayish-blue);
