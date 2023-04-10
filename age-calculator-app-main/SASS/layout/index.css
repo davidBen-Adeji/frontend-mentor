@@ -1,1 +1,36 @@
-/*# sourceMappingURL=index.css.map */
+.main {
+  background-color: var(--white);
+  width: min(100% - 30px, 40.625rem);
+  margin-inline: auto;
+  border-radius: 30px;
+  border-bottom-right-radius: 150px;
+  padding: 3.125em 1.25em;
+}
+
+.form {
+  display: flex;
+  position: relative;
+  gap: 1.25em;
+}
+.form__group__span {
+  color: var(--smokey-grey);
+}
+.form__group__input {
+  display: block;
+  width: 100%;
+  padding: 0.625em;
+  border-radius: 10px;
+}
+.form__group__error {
+  width: 100%;
+  color: var(--light-red);
+  word-break: break-all;
+}
+.form__btn {
+  position: absolute;
+  display: none;
+}
+
+.result p {
+  font-size: clamp(1.75rem, 3vw + 1rem, 3.125rem);
+}/*# sourceMappingURL=index.css.map */

@@ -1,1 +1,45 @@
 @use '../util' as u;
+
+.main {
+    background-color: var(--white);
+    width: min(100% - 30px, u.rem(650));
+    margin-inline: auto;
+    border-radius: 30px;
+    border-bottom-right-radius: 150px;
+    padding: u.em(50) u.em(20);
+}
+
+.form {
+    display: flex;
+    position: relative;
+    gap: u.em(20);
+    
+    &__group {
+        &__span {
+            color: var(--smokey-grey);
+        }
+        &__input {
+            display: block;
+            width: 100%;
+            padding: u.em(10);
+            border-radius: 10px;
+        }
+
+        &__error{
+            width: 100%;
+            color: var(--light-red);
+            word-break: break-all;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        display: none;
+    }
+}
+
+.result {
+    p {
+        font-size: clamp(u.rem(28), 3vw + u.rem(16), u.rem(50));
+    }
+}
