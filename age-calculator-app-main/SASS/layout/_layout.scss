@@ -2,7 +2,7 @@
 
 .main {
     background-color: var(--white);
-    width: min(100% - 30px, u.rem(650));
+    width: min(90%, u.rem(650));
     margin-inline: auto;
     border-radius: 30px;
     border-bottom-right-radius: 150px;
@@ -10,9 +10,19 @@
 }
 
 .form {
-    display: flex;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: u.em(30);
     position: relative;
-    gap: u.em(20);
+
+    &__inputs {
+        display: flex;
+        gap: u.em(20);
+        width: min(100%, u.em(450));
+
+        .error__input {
+            border-color: var(--light-red);
+        }
+    }
     
     &__group {
         &__span {
@@ -23,9 +33,38 @@
             width: 100%;
             padding: u.em(10);
             border-radius: 10px;
+            outline: 0;
+            border: 1px solid var(--light-grey);
+            cursor: pointer;
+            color: var(--off-black);
+
+            &:hover, &:focus {
+                border-color: var(--purple);
+            }
+
+            &::-webkit-input-placeholder {
+                color: var(--smokey-grey);
+            }
+            &::-ms-input-placeholder {
+                color: var(--smokey-grey);
+            }
+            &:-ms-input-placeholder {
+                color: var(--smokey-grey);
+            }
+            &::-moz-placeholder {
+                opacity: 1;
+                color: var(--smokey-grey);
+            }
+            &:-moz-placeholder {
+                opacity: 1;
+                color: var(--smokey-grey);
+            }
+            &::placeholder {
+                color: var(--smokey-grey);
+            }
         }
 
-        &__error{
+        &__error__msg{
             width: 100%;
             color: var(--light-red);
             word-break: break-all;
@@ -34,12 +73,39 @@
 
     &__btn {
         position: absolute;
-        display: none;
+        left: 50%;
+        translate: -50%;
+        border: 0;
+        border-radius: 50%;
+        background-color: var(--purple);
+        padding: 15px;
+
+        @media (min-width: u.em(650)) {
+            left: initial;
+            right: 0;
+            translate: 0;
+        }
+
+        &:hover, &:focus {
+            background-color: var(--off-black);
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
 .result {
+    margin-top: 40px;
     p {
-        font-size: clamp(u.rem(28), 3vw + u.rem(16), u.rem(50));
+        font-size: clamp(u.rem(30), 3.5vw + u.rem(16), u.rem(60));
+        margin-bottom: 0;
+        color: var(--off-black);
+
+        span {
+            color: var(--purple);
+        }
     }
 }
