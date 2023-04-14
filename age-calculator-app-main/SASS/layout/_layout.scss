@@ -2,7 +2,7 @@
 
 .main {
     background-color: var(--white);
-    width: min(90%, u.rem(650));
+    width: min(90%, u.rem(700));
     margin-inline: auto;
     border-radius: 30px;
     border-bottom-right-radius: 150px;
@@ -17,7 +17,7 @@
     &__inputs {
         display: flex;
         gap: u.em(20);
-        width: min(100%, u.em(450));
+        width: min(100%, u.em(518));
 
         .error__input {
             border-color: var(--light-red);
@@ -67,7 +67,7 @@
         &__error__msg{
             width: 100%;
             color: var(--light-red);
-            word-break: break-all;
+            word-wrap: break-word;
         }
     }
 

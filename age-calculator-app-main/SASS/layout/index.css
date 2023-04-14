@@ -1,6 +1,6 @@
 .main {
   background-color: var(--white);
-  width: min(90%, 40.625rem);
+  width: min(90%, 43.75rem);
   margin-inline: auto;
   border-radius: 30px;
   border-bottom-right-radius: 150px;
@@ -15,7 +15,7 @@
 .form__inputs {
   display: flex;
   gap: 1.25em;
-  width: min(100%, 28.125em);
+  width: min(100%, 32.375em);
 }
 .form__inputs .error__input {
   border-color: var(--light-red);
@@ -46,7 +46,7 @@
 .form__group__error__msg {
   width: 100%;
   color: var(--light-red);
-  word-break: break-all;
+  word-wrap: break-word;
 }
 .form__btn {
   position: absolute;

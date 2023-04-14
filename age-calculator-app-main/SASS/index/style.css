@@ -89,6 +89,19 @@ img, svg {
   max-width: 100%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
 .text-center {
   text-align: center;
 }
@@ -104,7 +117,7 @@ img, svg {
 
 .main {
   background-color: var(--white);
-  width: min(90%, 40.625rem);
+  width: min(90%, 43.75rem);
   margin-inline: auto;
   border-radius: 30px;
   border-bottom-right-radius: 150px;
@@ -119,7 +132,7 @@ img, svg {
 .form__inputs {
   display: flex;
   gap: 1.25em;
-  width: min(100%, 28.125em);
+  width: min(100%, 32.375em);
 }
 .form__inputs .error__input {
   border-color: var(--light-red);
@@ -150,7 +163,7 @@ img, svg {
 .form__group__error__msg {
   width: 100%;
   color: var(--light-red);
-  word-break: break-all;
+  word-wrap: break-word;
 }
 .form__btn {
   position: absolute;
