@@ -33,23 +33,23 @@
         <div data-group class="form__group">
           <label>
             <span class="form__group__span f-700">DAY</span>
-            <input data-input data-day-input class="form__group__input f-800" type="number" inputmode="numeric" pattern="\d*" placeholder="DD">
+            <input data-input data-day-input aria-describedby="validationError" class="form__group__input f-800" type="number" inputmode="numeric" pattern="\d*" placeholder="DD">
           </label>
-          <p data-error data-error-day class="form__group__error__msg italic"></p>
+          <p id="validationError" aria-live="polite" data-error data-error-day class="form__group__error__msg italic"></p>
         </div>
         <div data-group class="form__group">
           <label>
             <span class="form__group__span f-700">MONTH</span>
-            <input data-input data-month-input class="form__group__input f-800" type="number" inputmode="numeric" pattern="\d*" placeholder="MM">
+            <input data-input data-month-input aria-describedby="validationError" class="form__group__input f-800" type="number" inputmode="numeric" pattern="\d*" placeholder="MM">
           </label>
-          <p data-error data-error-month class="form__group__error__msg italic"></p>
+          <p id="validationError" aria-live="polite" data-error data-error-month class="form__group__error__msg italic"></p>
         </div>
         <div data-group class="form__group">
           <label>
             <span class="form__group__span f-700">YEAR</span>
-            <input data-input data-year-input class="form__group__input f-800" type="number" inputmode="numeric" pattern="\d*" placeholder="YYYY">
+            <input data-input data-year-input aria-describedby="validationError" class="form__group__input f-800" type="number" inputmode="numeric" pattern="\d*" placeholder="YYYY">
           </label>
-          <p data-error data-error-year class="form__group__error__msg italic"></p>
+          <p id="validationError" aria-live="polite" data-error data-error-year class="form__group__error__msg italic"></p>
         </div>
       </div>
       <button data-submit class="form__btn">

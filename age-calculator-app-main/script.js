@@ -1,17 +1,14 @@
-let inputs = document.querySelectorAll('[data-input]');
-let errors = document.querySelectorAll('[data-error]');
-let results = document.querySelectorAll('data-result');
-let inputDay = document.querySelector('[data-day-input]');
-let inputMonth = document.querySelector('[data-month-input]');
-let inputYear = document.querySelector('[data-year-input]');
-let errorDay = document.querySelector('[data-error-day]');
-let errorMonth = document.querySelector('[data-error-month]');
-let errorYear = document.querySelector('[data-error-year]');
-let inputGroups = document.querySelectorAll('[data-group]')
-let resultDay = document.querySelector('[data-result-day]');
-let resultMonth = document.querySelector('[data-result-month]');
-let resultYear = document.querySelector('[data-result-year]');
-let form = document.querySelector('[data-form]');
+const inputDay = document.querySelector('[data-day-input]');
+const inputMonth = document.querySelector('[data-month-input]');
+const inputYear = document.querySelector('[data-year-input]');
+const errorDay = document.querySelector('[data-error-day]');
+const errorMonth = document.querySelector('[data-error-month]');
+const errorYear = document.querySelector('[data-error-year]');
+const inputGroups = document.querySelectorAll('[data-group]')
+const resultDay = document.querySelector('[data-result-day]');
+const resultMonth = document.querySelector('[data-result-month]');
+const resultYear = document.querySelector('[data-result-year]');
+const form = document.querySelector('[data-form]');
 
 let isEmpty = false;
 let isInRange = true;
@@ -19,8 +16,8 @@ let isInRange = true;
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     inputGroups.forEach(inputGroup => {
-        let input = inputGroup.querySelector('[data-input]')
-        let error = inputGroup.querySelector('[data-error]')
+        const input = inputGroup.querySelector('[data-input]')
+        const error = inputGroup.querySelector('[data-error]')
 
         input.classList.remove('error__input')
         error.innerText = '';
@@ -37,13 +34,13 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    let dayInput = parseFloat(inputDay.value);
-    let monthInput = parseFloat(inputMonth.value);
-    let yearInput = parseFloat(inputYear.value);
+    const dayInput = parseFloat(inputDay.value);
+    const monthInput = parseFloat(inputMonth.value);
+    const yearInput = parseFloat(inputYear.value);
 
-    let dob = new Date(`${monthInput}/${dayInput}/${yearInput}`);
-    let currentDate = new Date();
-    let age = {};
+    const dob = new Date(`${monthInput}/${dayInput}/${yearInput}`);
+    const currentDate = new Date();
+    const age = {};
 
     if (yearInput > currentDate.getFullYear()) {
         isInRange = false;
@@ -104,7 +101,34 @@ form.addEventListener('submit', (event) => {
         }
     }
 
-    resultYear.innerText = age.year.toLocaleString('en', {maximumFractionDigits: 0});
-    resultMonth.innerText = age.month;
-    resultDay.innerText = age.days;
+    let a = 0, b = 0, c = 0;
+    const yearInterval = setInterval(function (){
+        resultYear.innerText = a.toLocaleString('en', {maximumFractionDigits: 0});
+
+        if (a >= age.year) {
+            a = 0
+            clearInterval(yearInterval);
+        }
+        a++;
+    }, 50);
+
+    const monthInterval = setInterval(function (){
+        resultMonth.innerText = b.toLocaleString('en', {maximumFractionDigits: 0});
+
+        if (b >= age.month) {
+            b = 0
+            clearInterval(monthInterval);
+        }
+        b++;
+    }, 50);
+
+    const dayInterval = setInterval(function (){
+        resultDay.innerText = c.toLocaleString('en', {maximumFractionDigits: 0});
+
+        if (c >= age.days) {
+            c = 0
+            clearInterval(dayInterval);
+        }
+        c++;
+    }, 50);
 })
