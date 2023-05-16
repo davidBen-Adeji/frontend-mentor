@@ -94,6 +94,7 @@
 
 .hero {
     &__content {
+        
         margin-top: u.em(25);
 
         &__header {
@@ -119,6 +120,12 @@
                     background-color: var(--very-dark-blue);
                 }
             }
+        }
+
+        @media (min-width: u.em(702.98)) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: u.em(20);
         }
     }
 
@@ -170,11 +177,11 @@
             display: none;
         }
 
-        &__content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: u.em(20);
-        }
+        // &__content {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr;
+        //     gap: u.em(20);
+        // }
 
         .aside {
             margin-top: 0;

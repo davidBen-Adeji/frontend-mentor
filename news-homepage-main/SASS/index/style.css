@@ -202,6 +202,13 @@ img, svg {
 .hero__content__intro--link:hover, .hero__content__intro--link:focus {
   background-color: var(--very-dark-blue);
 }
+@media (min-width: 43.93625em) {
+  .hero__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em;
+  }
+}
 .hero .aside {
   background-color: var(--very-dark-blue);
   margin-top: 4.0625em;
@@ -242,11 +249,6 @@ img, svg {
   }
   .hero__img--mobile {
     display: none;
-  }
-  .hero__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25em;
   }
   .hero .aside {
     margin-top: 0;
