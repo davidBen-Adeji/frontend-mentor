@@ -1,1 +1,7 @@
 @use '../util' as u;
+
+
+.main {
+    width: min(100% - 40px, u.em(1024));
+    margin-inline: auto;
+}

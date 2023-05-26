@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -10,10 +11,28 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-family: var(--space-grotesk);
+  font-size: 1.125rem;
+  background-image: url(../../images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {
-  --poppins: "Poppins", sans-serif;
+  --active-input-border: linear-gradient(to left,hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  --white: hsl(0, 0, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+:root {
+  --space-grotesk: "Space Grotesk", sans-serif;
 }
 
 .f-300 {
