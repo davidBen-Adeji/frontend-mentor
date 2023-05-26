@@ -1,0 +1,33 @@
+@use '../util' as u;
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@include u.breakpoint(medium) {
+    .text-left {
+        text-align: left;
+    }
+}
+
+.d-none {
+    display: none;
+}
