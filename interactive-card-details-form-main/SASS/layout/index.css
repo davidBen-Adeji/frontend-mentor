@@ -1,4 +1,60 @@
 .main {
   width: min(100% - 40px, 64em);
   margin-inline: auto;
+}
+.main .card {
+  font-size: 18px;
+  color: var(--white);
+  width: min(100%, 350px);
+  margin-inline: auto;
+}
+.main .card__front, .main .card__back {
+  background-size: cover;
+  width: 280px;
+  height: 150px;
+  border-radius: 5px;
+}
+.main .card__front {
+  background-image: url(../../images/bg-card-front.png);
+  padding: 15px 20px 20px;
+  transform: translateY(-42%);
+}
+.main .card__front .circles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .card__front .circles > * {
+  display: inline-block;
+}
+.main .card__front .circles__big {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+.main .card__front .circles__small {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.main .card__front .num {
+  font-size: 19px;
+  margin-top: 25px;
+  letter-spacing: 1.5px;
+}
+.main .card__front__footer {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.main .card__back {
+  background-image: url(../../images/bg-card-back.png);
+  margin-left: auto;
+}
+.main .card__back .num {
+  font-size: 16px;
+  display: inline-block;
+  transform: translate(680%, 305%);
 }/*# sourceMappingURL=index.css.map */
