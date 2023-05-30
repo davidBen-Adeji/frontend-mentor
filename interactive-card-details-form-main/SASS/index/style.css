@@ -229,7 +229,9 @@ input[type=number] {
 .main .card__back .num {
   font-size: 16px;
   display: inline-block;
-  transform: translate(680%, 305%);
+  transform: translate(610%, 270%);
+  width: 35px;
+  height: 23px;
 }
 @media (min-width: 43.75em) {
   .main .card__back .num {
