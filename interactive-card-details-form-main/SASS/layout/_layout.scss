@@ -86,6 +86,11 @@
                     border-color: var(--red);
                 }
             }
+            .error--message {
+                color: var(--red);
+                font-size: u.rem(14);
+                margin-top: u.em(5);
+            }
         }
         .form__input + .form__input {
             margin-top: u.em(20);
@@ -98,7 +103,7 @@
         }
         &__others {
             display: flex;
-            // justify-content: space-between;
+            align-items: flex-end;
             gap: 10px;
             .form__input__grp {
                 width: 50%;

@@ -203,6 +203,11 @@ input[type=number] {
 .main .form__input input.error {
   border-color: var(--red);
 }
+.main .form__input .error--message {
+  color: var(--red);
+  font-size: 0.875rem;
+  margin-top: 0.3125em;
+}
 .main .form .form__input + .form__input {
   margin-top: 1.25em;
 }
@@ -212,6 +217,7 @@ input[type=number] {
 }
 .main .form__others {
   display: flex;
+  align-items: flex-end;
   gap: 10px;
 }
 .main .form__others .form__input__grp {
