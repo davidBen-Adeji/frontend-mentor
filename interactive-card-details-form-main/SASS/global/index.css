@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 40px 0 0;
   min-height: 100vh;
   font-family: var(--space-grotesk);
   font-size: 1.125rem;
@@ -28,7 +28,9 @@ body {
   --white: hsl(0, 0%, 100%);
   --light-grayish-violet: hsl(270, 3%, 87%);
   --dark-grayish-violet: hsl(279, 6%, 55%);
-  --very-dark-violet: hsl(278, 68%, 11%);
+  --very-dark-violet: hsl(278, 62%, 18%);
+  --button-hover: hsl(278, 65%, 25%);
+  --red: hsl(0, 71%, 63%);
 }
 
 :root {
@@ -71,6 +73,16 @@ h1 {
 
 input, button, textarea, select {
   font: inherit;
+}
+
+input::-moz-placeholder {
+  opacity: 0.5;
+  color: var(--dark-grayish-violet);
+}
+
+input::placeholder {
+  opacity: 0.5;
+  color: var(--dark-grayish-violet);
 }
 
 button {

@@ -48,6 +48,7 @@
   display: flex;
   font-size: 14px;
   justify-content: space-between;
+  letter-spacing: 0.8px;
 }
 .main .card__back {
   background-image: url(../../images/bg-card-back.png);
@@ -57,4 +58,61 @@
   font-size: 16px;
   display: inline-block;
   transform: translate(680%, 305%);
+}
+.main .form__input span {
+  color: var(--very-dark-violet);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
+.main .form__input input {
+  outline: 0;
+  border: 1px solid var(--light-grayish-violet);
+  border-radius: 8px;
+  padding: 0.625em;
+  color: var(--very-dark-violet);
+}
+.main .form__input input.selected {
+  border-color: var(--active-input-border);
+}
+.main .form__input input.error {
+  border-color: var(--red);
+}
+.main .form .form__input + .form__input {
+  margin-top: 1.25em;
+}
+.main .form__name input, .main .form__num input {
+  display: block;
+  width: 100%;
+}
+.main .form__others {
+  display: flex;
+  gap: 10px;
+}
+.main .form__others .form__input__grp {
+  width: 50%;
+}
+.main .form__others .form__input__grp input {
+  display: block;
+  width: 100%;
+}
+.main .form__others .form__input__grp.exp input {
+  display: inline-block;
+  width: 48%;
+}
+.main .form button {
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: var(--very-dark-violet);
+  border-radius: 10px;
+  padding: 0.75em;
+  margin-top: 0.625em;
+}
+.main .form button:hover, .main .form button:focus {
+  background-color: var(--button-hover);
 }/*# sourceMappingURL=index.css.map */

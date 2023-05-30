@@ -9,9 +9,6 @@
         color: var(--white);
         width: min(100%, 350px);
         margin-inline: auto;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
         &__front, &__back {
             background-size: cover;
             width: 280px;
@@ -52,6 +49,7 @@
                 display: flex;
                 font-size: 14px;
                 justify-content: space-between;
+                letter-spacing: .8px;
             }
         }
         &__back {
@@ -61,6 +59,74 @@
                 font-size: 16px;
                 display: inline-block;
                 transform: translate(680%, 305%);
+            }
+        }
+    }
+    .form {
+        &__input {
+            span {
+                color: var(--very-dark-violet);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                display: block;
+                font-size: u.rem(13);
+                font-weight: bold;
+                margin-bottom: u.em(12);
+            }
+            input {
+                outline: 0;
+                border: 1px solid var(--light-grayish-violet);
+                border-radius: 8px;
+                padding: u.em(10);
+                color: var(--very-dark-violet);
+                &.selected {
+                    border-color: var(--active-input-border);
+                }
+                &.error {
+                    border-color: var(--red);
+                }
+            }
+        }
+        .form__input + .form__input {
+            margin-top: u.em(20);
+        }
+        &__name, &__num {
+            input {
+                display: block;
+                width: 100%;
+            }
+        }
+        &__others {
+            display: flex;
+            // justify-content: space-between;
+            gap: 10px;
+            .form__input__grp {
+                width: 50%;
+                // background-color: blanchedalmond;
+                input {
+                    display: block;
+                    width: 100%;
+                }
+                
+                &.exp {
+                    input {
+                        display: inline-block;
+                        width: 48%;
+                    }
+                }
+            }
+        }
+        button {
+            display: block;
+            width: 100%;
+            border: none;
+            color: white;
+            background-color: var(--very-dark-violet);
+            border-radius: 10px;
+            padding: u.em(12);
+            margin-top: u.em(10);
+            &:hover, &:focus {
+                background-color: var(--button-hover);
             }
         }
     }

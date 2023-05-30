@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 40px 0 0;
   min-height: 100vh;
   font-family: var(--space-grotesk);
   font-size: 1.125rem;
@@ -28,7 +28,9 @@ body {
   --white: hsl(0, 0%, 100%);
   --light-grayish-violet: hsl(270, 3%, 87%);
   --dark-grayish-violet: hsl(279, 6%, 55%);
-  --very-dark-violet: hsl(278, 68%, 11%);
+  --very-dark-violet: hsl(278, 62%, 18%);
+  --button-hover: hsl(278, 65%, 25%);
+  --red: hsl(0, 71%, 63%);
 }
 
 :root {
@@ -71,6 +73,16 @@ h1 {
 
 input, button, textarea, select {
   font: inherit;
+}
+
+input::-moz-placeholder {
+  opacity: 0.5;
+  color: var(--dark-grayish-violet);
+}
+
+input::placeholder {
+  opacity: 0.5;
+  color: var(--dark-grayish-violet);
 }
 
 button {
@@ -158,6 +170,7 @@ input[type=number] {
   display: flex;
   font-size: 14px;
   justify-content: space-between;
+  letter-spacing: 0.8px;
 }
 .main .card__back {
   background-image: url(../../images/bg-card-back.png);
@@ -167,4 +180,61 @@ input[type=number] {
   font-size: 16px;
   display: inline-block;
   transform: translate(680%, 305%);
+}
+.main .form__input span {
+  color: var(--very-dark-violet);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
+.main .form__input input {
+  outline: 0;
+  border: 1px solid var(--light-grayish-violet);
+  border-radius: 8px;
+  padding: 0.625em;
+  color: var(--very-dark-violet);
+}
+.main .form__input input.selected {
+  border-color: var(--active-input-border);
+}
+.main .form__input input.error {
+  border-color: var(--red);
+}
+.main .form .form__input + .form__input {
+  margin-top: 1.25em;
+}
+.main .form__name input, .main .form__num input {
+  display: block;
+  width: 100%;
+}
+.main .form__others {
+  display: flex;
+  gap: 10px;
+}
+.main .form__others .form__input__grp {
+  width: 50%;
+}
+.main .form__others .form__input__grp input {
+  display: block;
+  width: 100%;
+}
+.main .form__others .form__input__grp.exp input {
+  display: inline-block;
+  width: 48%;
+}
+.main .form button {
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: var(--very-dark-violet);
+  border-radius: 10px;
+  padding: 0.75em;
+  margin-top: 0.625em;
+}
+.main .form button:hover, .main .form button:focus {
+  background-color: var(--button-hover);
 }/*# sourceMappingURL=style.css.map */

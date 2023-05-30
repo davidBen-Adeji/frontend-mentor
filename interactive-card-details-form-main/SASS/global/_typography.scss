@@ -18,6 +18,31 @@ input, button, textarea, select {
     font: inherit;
 }
 
+input::-webkit-input-placeholder {
+    opacity: .5;
+    color: var(--dark-grayish-violet);
+}
+input::-ms-input-placeholder {
+    opacity: .5;
+    color: var(--dark-grayish-violet);
+}
+input:-ms-input-placeholder {
+    opacity: .5;
+    color: var(--dark-grayish-violet);
+}
+input::-moz-placeholder {
+    opacity: .5;
+    color: var(--dark-grayish-violet);
+}
+input:-moz-placeholder {
+    opacity: .5;
+    color: var(--dark-grayish-violet);
+}
+input::placeholder {
+    opacity: .5;
+    color: var(--dark-grayish-violet);
+}
+
 button {
     cursor: pointer;
 }
