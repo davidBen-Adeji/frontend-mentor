@@ -13,14 +13,21 @@ body {
   min-height: 100vh;
   font-family: var(--space-grotesk);
   font-size: 1.125rem;
-  background-image: url(../../images/bg-main-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 100% 240px;
   display: flex;
   flex-direction: column;
   gap: 2.5em;
   justify-content: center;
   align-items: center;
+  background-image: url(../../images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 240px;
+}
+@media (min-width: 43.75em) {
+  body {
+    background-image: url(../../images/bg-main-desktop.png);
+    background-size: 400px 100%;
+    background-attachment: fixed;
+  }
 }
 
 :root {
@@ -121,8 +128,15 @@ input[type=number] {
 }
 
 .main {
-  width: min(100% - 40px, 64em);
+  width: min(100% - 40px, 51.25em);
   margin-inline: auto;
+}
+@media (min-width: 43.75em) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
 }
 .main .card {
   font-size: 18px;
@@ -130,16 +144,35 @@ input[type=number] {
   width: min(100%, 350px);
   margin-inline: auto;
 }
+@media (min-width: 43.75em) {
+  .main .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
 .main .card__front, .main .card__back {
   background-size: cover;
   width: 280px;
   height: 150px;
   border-radius: 5px;
 }
+@media (min-width: 43.75em) {
+  .main .card__front, .main .card__back {
+    width: 320px;
+    height: 180px;
+  }
+}
 .main .card__front {
   background-image: url(../../images/bg-card-front.png);
   padding: 15px 20px 20px;
   transform: translateY(-42%);
+}
+@media (min-width: 43.75em) {
+  .main .card__front {
+    transform: translateY(0);
+  }
 }
 .main .card__front .circles {
   display: flex;
@@ -161,10 +194,27 @@ input[type=number] {
   border-radius: 50%;
   border: 1px solid white;
 }
+@media (min-width: 43.75em) {
+  .main .card__front .circles__big {
+    width: 40px;
+    height: 40px;
+  }
+  .main .card__front .circles__small {
+    width: 24px;
+    height: 24px;
+  }
+}
 .main .card__front .num {
   font-size: 19px;
   margin-top: 25px;
   letter-spacing: 1.5px;
+  text-align: center;
+}
+@media (min-width: 43.75em) {
+  .main .card__front .num {
+    font-size: 21px;
+    margin-top: 45px;
+  }
 }
 .main .card__front__footer {
   display: flex;
@@ -180,6 +230,12 @@ input[type=number] {
   font-size: 16px;
   display: inline-block;
   transform: translate(680%, 305%);
+}
+@media (min-width: 43.75em) {
+  .main .card__back .num {
+    font-size: 18px;
+    transform: translate(710%, 335%);
+  }
 }
 .main .form-state button, .main .form-state a {
   display: block;
@@ -198,7 +254,7 @@ input[type=number] {
   color: var(--very-dark-violet);
   text-transform: uppercase;
   letter-spacing: 2px;
-  display: block;
+  display: inline-block;
   font-size: 0.8125rem;
   font-weight: bold;
   margin-bottom: 0.75em;
@@ -210,7 +266,7 @@ input[type=number] {
   padding: 0.625em;
   color: var(--very-dark-violet);
 }
-.main .form-state .form__input input.selected {
+.main .form-state .form__input input:focus {
   border-color: var(--active-input-border);
 }
 .main .form-state .form__input input.error {
@@ -239,6 +295,9 @@ input[type=number] {
 .main .form-state .form__others .form__input__grp input {
   display: block;
   width: 100%;
+}
+.main .form-state .form__others .form__input__grp.exp span {
+  display: block;
 }
 .main .form-state .form__others .form__input__grp.exp input {
   display: inline-block;

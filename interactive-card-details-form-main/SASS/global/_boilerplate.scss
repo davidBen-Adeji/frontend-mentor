@@ -14,12 +14,17 @@ body {
     min-height: 100vh;
     font-family: var(--space-grotesk);
     font-size: u.rem(18);
-    background-image: url(../../images/bg-main-mobile.png);
-    background-repeat: no-repeat;
-    background-size: 100% 240px;
     display: flex;
     flex-direction: column;
     gap: u.em(40);
     justify-content: center;
     align-items: center;
+    background-image: url(../../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 240px;
+    @include u.breakpoint(medium) {
+        background-image: url(../../images/bg-main-desktop.png);
+        background-size: 400px 100%;
+        background-attachment: fixed;
+    }
 }
