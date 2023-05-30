@@ -59,57 +59,7 @@
   display: inline-block;
   transform: translate(680%, 305%);
 }
-.main .form__input span {
-  color: var(--very-dark-violet);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
-  font-size: 0.8125rem;
-  font-weight: bold;
-  margin-bottom: 0.75em;
-}
-.main .form__input input {
-  outline: 0;
-  border: 1px solid var(--light-grayish-violet);
-  border-radius: 8px;
-  padding: 0.625em;
-  color: var(--very-dark-violet);
-}
-.main .form__input input.selected {
-  border-color: var(--active-input-border);
-}
-.main .form__input input.error {
-  border-color: var(--red);
-}
-.main .form__input .error--message {
-  color: var(--red);
-  font-size: 0.875rem;
-  margin-top: 0.3125em;
-}
-.main .form .form__input + .form__input {
-  margin-top: 1.25em;
-}
-.main .form__name input, .main .form__num input {
-  display: block;
-  width: 100%;
-}
-.main .form__others {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-}
-.main .form__others .form__input__grp {
-  width: 50%;
-}
-.main .form__others .form__input__grp input {
-  display: block;
-  width: 100%;
-}
-.main .form__others .form__input__grp.exp input {
-  display: inline-block;
-  width: 48%;
-}
-.main .form button {
+.main .form-state button, .main .form-state a {
   display: block;
   width: 100%;
   border: none;
@@ -119,6 +69,69 @@
   padding: 0.75em;
   margin-top: 0.625em;
 }
-.main .form button:hover, .main .form button:focus {
+.main .form-state button:hover, .main .form-state button:focus, .main .form-state a:hover, .main .form-state a:focus {
   background-color: var(--button-hover);
+}
+.main .form-state .form__input span {
+  color: var(--very-dark-violet);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+}
+.main .form-state .form__input input {
+  outline: 0;
+  border: 1px solid var(--light-grayish-violet);
+  border-radius: 8px;
+  padding: 0.625em;
+  color: var(--very-dark-violet);
+}
+.main .form-state .form__input input.selected {
+  border-color: var(--active-input-border);
+}
+.main .form-state .form__input input.error {
+  border-color: var(--red);
+}
+.main .form-state .form__input .error--message {
+  color: var(--red);
+  font-size: 0.875rem;
+  margin-top: 0.3125em;
+}
+.main .form-state .form .form__input + .form__input {
+  margin-top: 1.25em;
+}
+.main .form-state .form__name input, .main .form-state .form__num input {
+  display: block;
+  width: 100%;
+}
+.main .form-state .form__others {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.main .form-state .form__others .form__input__grp {
+  width: 50%;
+}
+.main .form-state .form__others .form__input__grp input {
+  display: block;
+  width: 100%;
+}
+.main .form-state .form__others .form__input__grp.exp input {
+  display: inline-block;
+  width: 48%;
+}
+.main .form-state .complete__state {
+  text-align: center;
+  color: var(--very-dark-violet);
+}
+.main .form-state .complete__state img {
+  display: inline-block;
+}
+.main .form-state .complete__state h1 {
+  margin-top: 0.75em;
+}
+.main .form-state .complete__state a {
+  margin-top: 1.875em;
 }/*# sourceMappingURL=index.css.map */
