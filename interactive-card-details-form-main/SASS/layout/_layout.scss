@@ -159,7 +159,7 @@
             &__others {
                 display: flex;
                 align-items: flex-end;
-                gap: 10px;
+                gap: u.rem(10);
                 .form__input__grp {
                     width: 50%;
                     // background-color: blanchedalmond;

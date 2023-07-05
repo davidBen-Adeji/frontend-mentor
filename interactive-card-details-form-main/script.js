@@ -1,6 +1,6 @@
 'use strict';
 const formParent = document.querySelector('.form-state');
-const form = document.querySelector('.form');
+const form = document.querySelector('[data-form]');
 const cvcOutput = document.querySelector('[data-cvc-output]');
 const numOutput = document.querySelector('[data-num-output]');
 const nameOutput = document.querySelector('[data-name-output]');

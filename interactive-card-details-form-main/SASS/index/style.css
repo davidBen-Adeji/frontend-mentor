@@ -64,6 +64,14 @@ body {
   font-weight: 700;
 }
 
+.f-800 {
+  font-weight: 800;
+}
+
+.f-900 {
+  font-weight: 900;
+}
+
 a, a:hover, a:visited {
   cursor: pointer;
   text-decoration: none;
@@ -290,7 +298,7 @@ input[type=number] {
 .main .form-state .form__others {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .main .form-state .form__others .form__input__grp {
   width: 50%;

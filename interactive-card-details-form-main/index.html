@@ -10,7 +10,8 @@
 
   <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="SASS/index/style.css">
-  <script src="script.js" defer></script>
+  <!-- <script src="script.js" defer></script> -->
+  <script src="app.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -44,9 +45,9 @@
         </div>
       </div>
     </div>
-    <div class="form-state">
-      <form action="#" class="form">
-        <div data-input-div="" data-form-input class="form__input form__name">
+    <div data-form-state class="form-state">
+      <form action="#" class="form" data-form novalidate>
+        <div data-input-div="" data-form-input data-name-field class="form__input form__name">
           <label>
             <span>Cardholder Name</span>
             <input data-input-field data-input-name aria-describedby="validationError" type="text" name="name" id="name"
@@ -73,7 +74,7 @@
               <input data-input-field data-input-year data-input-num="" aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*" placeholder="YY"
                 min="0" max="99" maxlength="2">
             </label>
-            <p data-error-message data-num-error class="error--message" id="validationError" aria-live="polite"></p>
+            <p data-error-message data-exp-error data-num-error class="error--message" id="validationError" aria-live="polite"></p>
           </div>
           <div data-input-div="" data-form-input class="form__input form__input__grp cvc">
             <label>

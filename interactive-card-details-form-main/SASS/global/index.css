@@ -64,6 +64,14 @@ body {
   font-weight: 700;
 }
 
+.f-800 {
+  font-weight: 800;
+}
+
+.f-900 {
+  font-weight: 900;
+}
+
 a, a:hover, a:visited {
   cursor: pointer;
   text-decoration: none;
