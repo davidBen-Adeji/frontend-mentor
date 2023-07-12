@@ -41,13 +41,15 @@
         </p>
         <div class="card__front__footer">
           <p data-name-output="">Jane Appleseed</p>
-          <p data-exp-output>00/00</p>
+          <p data-exp-output>
+            <span data-month-exp="">00</span>/<span data-year-exp="">00</span>
+          </p>
         </div>
       </div>
     </div>
     <div data-form-state class="form-state">
-      <form action="#" class="form" data-form novalidate>
-        <div data-input-div="" data-form-input data-name-field class="form__input form__name">
+      <form action="#" class="form" data-form>
+        <div data-name-div data-input-div class="form__input form__name">
           <label>
             <span>Cardholder Name</span>
             <input data-input-field data-input-name aria-describedby="validationError" type="text" name="name" id="name"
@@ -55,7 +57,7 @@
           </label>
           <p data-error-message data-name-error class="error--message" id="validationError" aria-live="polite"></p>
         </div>
-        <div data-input-div="" data-form-input class="form__input form__num">
+        <div data-cNum-div data-input-div class="form__input form__num">
           <label>
             <span>Card Number</span>
             <input data-input-field data-input-cNum aria-describedby="validationError" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
@@ -64,24 +66,24 @@
           <p data-error-message data-cNum-error class="error--message" id="validationError" aria-live="polite"></p>
         </div>
         <div class="form__others">
-          <div data-input-div="" data-form-input class="form__input form__input__grp exp">
+          <div data-input-div data-month-div data-year-div data-month-year-div class="form__input form__input__grp exp">
             <label>
               <span>
                 Exp. Date (MM/YY)
               </span>
-              <input data-input-field data-input-month data-input-num="" aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*" placeholder="MM"
-                min="0" max="12" maxlength="2">
-              <input data-input-field data-input-year data-input-num="" aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*" placeholder="YY"
-                min="0" max="99" maxlength="2">
+              <input data-input-field data-input-month aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*" placeholder="MM"
+                min="1" max="12" maxlength="2">
+              <input data-input-field data-input-year aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*" placeholder="YY"
+                min="0" max="999" maxlength="2">
             </label>
-            <p data-error-message data-exp-error data-num-error class="error--message" id="validationError" aria-live="polite"></p>
+            <p data-error-message data-month-error data-year-error data-month-year-error class="error--message" id="validationError" aria-live="polite"></p>
           </div>
-          <div data-input-div="" data-form-input class="form__input form__input__grp cvc">
+          <div data-input-div data-cvc-div class="form__input form__input__grp cvc">
             <label>
               <span>
                 CVC
               </span>
-              <input data-input-field data-input-cvc data-input-num="" aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*"
+              <input data-input-field data-input-cvc aria-describedby="validationError" type="number" inputmode="numeric" pattern="\d*"
                 placeholder="e.g 123" maxlength="3" max="999">
             </label>
             <p data-error-message data-cvc-error data-num-error="" class="error--message" id="validationError" aria-live="polite"></p>
