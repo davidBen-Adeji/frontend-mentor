@@ -1,4 +1,5 @@
 // 'use strict';
+alert('testin testin 1 2 3')
 const card = {
     num: document.querySelector('[data-num-output]'),
     name: document.querySelector('[data-name-output]'),
